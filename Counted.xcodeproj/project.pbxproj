@@ -16,6 +16,7 @@
 		4533B5021CE8DE4C00E85B65 /* BTService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4533B5011CE8DE4C00E85B65 /* BTService.swift */; };
 		45DE89BA1CF2B6C6001C821B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DE89B91CF2B6C6001C821B /* Constants.swift */; };
 		45DE89BC1CF2BAE5001C821B /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DE89BB1CF2BAE5001C821B /* Errors.swift */; };
+		45DE89BE1CF2C374001C821B /* BluetoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DE89BD1CF2C374001C821B /* BluetoothManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		4533B5011CE8DE4C00E85B65 /* BTService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTService.swift; sourceTree = "<group>"; };
 		45DE89B91CF2B6C6001C821B /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		45DE89BB1CF2BAE5001C821B /* Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		45DE89BD1CF2C374001C821B /* BluetoothManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetoothManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			children = (
 				4533B4FF1CE8DE0700E85B65 /* BTDiscovery.swift */,
 				4533B5011CE8DE4C00E85B65 /* BTService.swift */,
+				45DE89BD1CF2C374001C821B /* BluetoothManager.swift */,
 			);
 			path = Bluetooth;
 			sourceTree = "<group>";
@@ -167,6 +170,7 @@
 				45DE89BA1CF2B6C6001C821B /* Constants.swift in Sources */,
 				4533B5001CE8DE0700E85B65 /* BTDiscovery.swift in Sources */,
 				4533B5021CE8DE4C00E85B65 /* BTService.swift in Sources */,
+				45DE89BE1CF2C374001C821B /* BluetoothManager.swift in Sources */,
 				4533B4EF1CE8D78400E85B65 /* ViewController.swift in Sources */,
 				45DE89BC1CF2BAE5001C821B /* Errors.swift in Sources */,
 				4533B4ED1CE8D78400E85B65 /* AppDelegate.swift in Sources */,

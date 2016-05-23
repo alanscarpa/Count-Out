@@ -29,6 +29,8 @@ class ViewController: UIViewController {
         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(didReceiveWeightReading(_:)), name: kDidGetWeightReading, object: nil)
     }
     
+    // MARK: Scale Notifications
+    
     func didConnectToScale() {
         print("Connected to scale!")
     }
