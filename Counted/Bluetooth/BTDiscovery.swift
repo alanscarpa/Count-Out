@@ -10,7 +10,6 @@
 import Foundation
 import CoreBluetooth
 
-
 class BTDiscovery: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate {
     static let sharedManager = BTDiscovery()
     private var centralManager: CBCentralManager?
@@ -39,7 +38,7 @@ class BTDiscovery: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate {
             clearDevices()
             
         case CBCentralManagerState.Unauthorized:
-            // Indicate to user that the iOS device does not support BLE.
+            // TODO: Indicate to user that the iOS device is not authorized to use Bluetooth.
             break
             
         case CBCentralManagerState.Unknown:
@@ -53,6 +52,7 @@ class BTDiscovery: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate {
             clearDevices()
             
         case CBCentralManagerState.Unsupported:
+            // TODO: Let user know that device can't support Bluetooth
             break
         }
     }
@@ -68,6 +68,7 @@ class BTDiscovery: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate {
     
     func centralManager(central: CBCentralManager, didConnectPeripheral peripheral: CBPeripheral) {
         if peripheral == peripheralBLE {
+            NSNotificationCenter.defaultCenter().postNotificationName(kDidConnectToScale, object: nil, userInfo:nil)
             bleService = BTService(initWithPeripheral: peripheral)
         }
         central.stopScan()
@@ -76,6 +77,8 @@ class BTDiscovery: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate {
     func centralManager(central: CBCentralManager, didDisconnectPeripheral peripheral: CBPeripheral, error: NSError?) {
         if (peripheral == peripheralBLE) {
             central.cancelPeripheralConnection(peripheral)
+            NSNotificationCenter.defaultCenter().postNotificationName(kDidDisconnectFromScale, object: nil, userInfo:nil)
+            bleService = BTService(initWithPeripheral: peripheral)
             clearDevices()
             startScanning()
         }

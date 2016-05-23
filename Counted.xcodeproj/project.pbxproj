@@ -14,6 +14,8 @@
 		4533B4F71CE8D78400E85B65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4533B4F51CE8D78400E85B65 /* LaunchScreen.storyboard */; };
 		4533B5001CE8DE0700E85B65 /* BTDiscovery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4533B4FF1CE8DE0700E85B65 /* BTDiscovery.swift */; };
 		4533B5021CE8DE4C00E85B65 /* BTService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4533B5011CE8DE4C00E85B65 /* BTService.swift */; };
+		45DE89BA1CF2B6C6001C821B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DE89B91CF2B6C6001C821B /* Constants.swift */; };
+		45DE89BC1CF2BAE5001C821B /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DE89BB1CF2BAE5001C821B /* Errors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		4533B4F81CE8D78400E85B65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4533B4FF1CE8DE0700E85B65 /* BTDiscovery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTDiscovery.swift; sourceTree = "<group>"; };
 		4533B5011CE8DE4C00E85B65 /* BTService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTService.swift; sourceTree = "<group>"; };
+		45DE89B91CF2B6C6001C821B /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		45DE89BB1CF2BAE5001C821B /* Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +62,9 @@
 		4533B4EB1CE8D78400E85B65 /* Counted */ = {
 			isa = PBXGroup;
 			children = (
-				4533B4FE1CE8DDE900E85B65 /* Bluetooth */,
 				4533B4EC1CE8D78400E85B65 /* AppDelegate.swift */,
+				45DE89B81CF2B69E001C821B /* Utilities */,
+				4533B4FE1CE8DDE900E85B65 /* Bluetooth */,
 				4533B4EE1CE8D78400E85B65 /* ViewController.swift */,
 				4533B4F01CE8D78400E85B65 /* Main.storyboard */,
 				4533B4F31CE8D78400E85B65 /* Assets.xcassets */,
@@ -76,6 +81,15 @@
 				4533B5011CE8DE4C00E85B65 /* BTService.swift */,
 			);
 			path = Bluetooth;
+			sourceTree = "<group>";
+		};
+		45DE89B81CF2B69E001C821B /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				45DE89B91CF2B6C6001C821B /* Constants.swift */,
+				45DE89BB1CF2BAE5001C821B /* Errors.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,9 +164,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45DE89BA1CF2B6C6001C821B /* Constants.swift in Sources */,
 				4533B5001CE8DE0700E85B65 /* BTDiscovery.swift in Sources */,
 				4533B5021CE8DE4C00E85B65 /* BTService.swift in Sources */,
 				4533B4EF1CE8D78400E85B65 /* ViewController.swift in Sources */,
+				45DE89BC1CF2BAE5001C821B /* Errors.swift in Sources */,
 				4533B4ED1CE8D78400E85B65 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -305,6 +321,7 @@
 				4533B4FD1CE8D78400E85B65 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
