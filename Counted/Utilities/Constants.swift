@@ -8,6 +8,5 @@
 
 import Foundation
 
-let kDidConnectToScale = "didConnectToScale"
 let kDidGetWeightReading = "didGetWeightReading"
-let kDidDisconnectFromScale = "didDisconnectFromScale"
+let kBluetoothError = "bluetoothError"

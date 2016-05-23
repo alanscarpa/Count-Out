@@ -10,6 +10,12 @@
 import Foundation
 import CoreBluetooth
 
+protocol BTDiscoveryDelegate: class {
+    func userEnabledBluetooth()
+    func userBluetoothError(errorState: CBCentralManagerState)
+    func didConnectToScale()
+}
+
 class BTDiscovery: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate {
     static let sharedManager = BTDiscovery()
     private var centralManager: CBCentralManager?
@@ -22,9 +28,9 @@ class BTDiscovery: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate {
             }
         }
     }
+    weak var delegate: BTDiscoveryDelegate?
     
-    override init() {
-        super.init()
+    func connectToScale() {
         let centralQueue = dispatch_queue_create("com.counted", DISPATCH_QUEUE_SERIAL)
         centralManager = CBCentralManager(delegate: self, queue: centralQueue)
     }
@@ -32,13 +38,13 @@ class BTDiscovery: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate {
     // MARK: - CBCentralManagerDelegate
     
     func centralManagerDidUpdateState(central: CBCentralManager) {
-        switch (central.state) {
+        switch central.state {
         case CBCentralManagerState.PoweredOff:
-            // TODO: Show modal explaining how to turn on Bluetooth
+            delegate?.userBluetoothError(.PoweredOff)
             clearDevices()
             
         case CBCentralManagerState.Unauthorized:
-            // TODO: Indicate to user that the iOS device is not authorized to use Bluetooth.
+            delegate?.userBluetoothError(.Unauthorized)
             break
             
         case CBCentralManagerState.Unknown:
@@ -46,13 +52,14 @@ class BTDiscovery: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate {
             break
             
         case CBCentralManagerState.PoweredOn:
+            delegate?.userEnabledBluetooth()
             startScanning()
             
         case CBCentralManagerState.Resetting:
             clearDevices()
             
         case CBCentralManagerState.Unsupported:
-            // TODO: Let user know that device can't support Bluetooth
+            delegate?.userBluetoothError(.Unsupported)
             break
         }
     }
@@ -68,20 +75,23 @@ class BTDiscovery: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate {
     
     func centralManager(central: CBCentralManager, didConnectPeripheral peripheral: CBPeripheral) {
         if peripheral == peripheralBLE {
-            NSNotificationCenter.defaultCenter().postNotificationName(kDidConnectToScale, object: nil, userInfo:nil)
+            delegate?.didConnectToScale()
             bleService = BTService(initWithPeripheral: peripheral)
         }
         central.stopScan()
     }
     
     func centralManager(central: CBCentralManager, didDisconnectPeripheral peripheral: CBPeripheral, error: NSError?) {
-        if (peripheral == peripheralBLE) {
+        // Error code 6 is "Connection timed out unexpectedly".  This happens whenever the scale is turned off.  We don't want to trigger error here.
+        // TODO: Check if new scale behaves the same way
+        if let error = error where peripheral == peripheralBLE && error.code != 6 {
+            NSNotificationCenter.defaultCenter().postNotificationName(kBluetoothError, object: self, userInfo: [kBluetoothError: error])
+        } else if peripheral == peripheralBLE {
             central.cancelPeripheralConnection(peripheral)
-            NSNotificationCenter.defaultCenter().postNotificationName(kDidDisconnectFromScale, object: nil, userInfo:nil)
-            bleService = BTService(initWithPeripheral: peripheral)
-            clearDevices()
-            startScanning()
+            // TODO:  If you disconnect before getting a reading, send an error.
         }
+        clearDevices()
+        startScanning()
     }
     
     // MARK: Private

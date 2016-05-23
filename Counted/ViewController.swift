@@ -7,45 +7,55 @@
 //
 
 import UIKit
+import CoreBluetooth
 
-class ViewController: UIViewController {
-    let btDiscovery = BTDiscovery.sharedManager
+class ViewController: UIViewController, BluetoothManagerDelegate {
+    let bluetoothManager = BluetoothManager.sharedInstance
     @IBOutlet weak var weightLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        registerNotifications()
+        bluetoothManager.delegate = self
+        bluetoothManager.connectToScale()
     }
     
-    deinit {
-        NSNotificationCenter.defaultCenter().removeObserver(self)
+    // MARK: BluetoothManagerDelegate
+    
+    func gettingWeightReading() {
+        print("Connected to scale & getting weight reading!")
     }
     
-    // MARK: Notifications
-    
-    func registerNotifications() {
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(didConnectToScale), name: kDidConnectToScale, object: nil)
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(didDisconnectFromScale), name: kDidDisconnectFromScale, object: nil)
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(didReceiveWeightReading(_:)), name: kDidGetWeightReading, object: nil)
+    func receivedWeightReading(weight: String) {
+        // TODO: Only get 1 weight reading
+        weightLabel.text = weight
+        print(weight)
     }
     
-    // MARK: Scale Notifications
-    
-    func didConnectToScale() {
-        print("Connected to scale!")
-    }
-    
-    func didDisconnectFromScale() {
-        print("Disconnected from scale!")
-    }
-    
-    func didReceiveWeightReading(notification: NSNotification) {
-        NSOperationQueue.mainQueue().addOperationWithBlock {
-            if let weight = notification.userInfo?["weight"] as? Double {
-                self.weightLabel.text = String(format:"%.2f", weight)
-            }
+    func receivedBluetoothError(error: NSError) {
+        if let errorMessage = error.userInfo[NSLocalizedDescriptionKey] as? String {
+            NSOperationQueue.mainQueue().addOperationWithBlock({ 
+                self.presentViewController(UIAlertController.bluetoothErrorWithMessage(errorMessage), animated: true, completion: nil)
+            })
         }
     }
-
+    
+    func receivedUserBluetoothError(errorState: CBCentralManagerState) {
+        // TODO: Maybe show a modal, preventing user from attempting to use scale until Bluetooth is enabled
+        switch errorState {
+        case .PoweredOff:
+            break
+        case .Unsupported:
+            break
+        case .Unauthorized:
+            break
+        default:
+            break
+        }
+    }
+    
+    func userEnabledBluetooth() {
+        // TODO: Dismiss modal instructing user to turn on bluetooth if it exists?
+    }
+    
 }
 

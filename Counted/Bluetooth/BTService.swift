@@ -32,6 +32,7 @@ class BTService: NSObject, CBPeripheralDelegate {
     
     func peripheral(peripheral: CBPeripheral, didDiscoverServices error: NSError?) {
         if let error = errorForPeripheral(peripheral, error: error) {
+            NSNotificationCenter.defaultCenter().postNotificationName(kBluetoothError, object: self, userInfo: [kBluetoothError: error])
             print(error)
         } else {
             guard let services = peripheral.services where peripheral.services?.count > 0 else { return }
@@ -46,6 +47,7 @@ class BTService: NSObject, CBPeripheralDelegate {
     
     func peripheral(peripheral: CBPeripheral, didDiscoverCharacteristicsForService service: CBService, error: NSError?) {
         if let error = errorForPeripheral(peripheral, error: error) {
+            NSNotificationCenter.defaultCenter().postNotificationName(kBluetoothError, object: self, userInfo: [kBluetoothError: error])
             print(error)
         } else {
             if let characteristics = service.characteristics {
@@ -59,6 +61,7 @@ class BTService: NSObject, CBPeripheralDelegate {
     func peripheral(peripheral: CBPeripheral, didUpdateValueForCharacteristic characteristic: CBCharacteristic, error: NSError?) {
         guard let data = characteristic.value else {
             if let error = errorForPeripheral(peripheral, error: error) {
+                NSNotificationCenter.defaultCenter().postNotificationName(kBluetoothError, object: self, userInfo: [kBluetoothError: error])
                 print(error)
             }
             return
@@ -76,7 +79,7 @@ class BTService: NSObject, CBPeripheralDelegate {
         // 206 means scale has final weight
         if array[0] == 206 {
             let weightInPounds = Double(CFSwapInt32BigToHost(array[1])) * 0.00000336223
-            NSNotificationCenter.defaultCenter().postNotificationName(kDidGetWeightReading, object: nil, userInfo: ["weight":weightInPounds])
+            NSNotificationCenter.defaultCenter().postNotificationName(kDidGetWeightReading, object: nil, userInfo: ["weight": weightInPounds])
         }
     }
     
