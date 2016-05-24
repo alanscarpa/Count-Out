@@ -17,8 +17,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6ii-JK-2o8">
-                                <rect key="frame" x="186" y="228" width="240" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="quickCountLogo" translatesAutoresizingMaskIntoConstraints="NO" id="6ii-JK-2o8">
+                                <rect key="frame" x="100" y="100" width="400" height="400"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.10980392156862745" green="0.10980392156862745" blue="0.10980392156862745" alpha="1" colorSpace="calibratedRGB"/>
@@ -33,4 +33,7 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="quickCountLogo" width="400" height="400"/>
+    </resources>
 </document>
