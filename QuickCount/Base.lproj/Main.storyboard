@@ -3,12 +3,19 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Dosis-SemiBold.ttf">
+            <string>Dosis-SemiBold</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="QuickCount" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="QuickCount" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -17,16 +24,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DXP-Dr-kL8">
-                                <rect key="frame" x="260" y="351" width="46" height="30"/>
-                                <state key="normal" title="Login"/>
-                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="quickCountLogo" translatesAutoresizingMaskIntoConstraints="NO" id="2rc-MO-kyt">
+                                <rect key="frame" x="89" y="20" width="421" height="421"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="2rc-MO-kyt" secondAttribute="height" multiplier="1:1" id="G9n-e3-Mx6"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Passcode" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5pA-h4-uPd">
+                                <rect key="frame" x="89.5" y="441" width="421" height="30"/>
+                                <fontDescription key="fontDescription" name="Dosis-SemiBold" family="Dosis" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5pA-h4-uPd" firstAttribute="top" secondItem="2rc-MO-kyt" secondAttribute="bottom" id="C8m-Cz-kf7"/>
+                            <constraint firstItem="2rc-MO-kyt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LA6-xD-xSg"/>
+                            <constraint firstItem="2rc-MO-kyt" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="dBn-Ah-Rfl"/>
+                            <constraint firstItem="5pA-h4-uPd" firstAttribute="width" secondItem="2rc-MO-kyt" secondAttribute="width" id="fuj-39-AnG"/>
+                            <constraint firstItem="2rc-MO-kyt" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="jZW-hF-eUg"/>
+                            <constraint firstItem="5pA-h4-uPd" firstAttribute="centerX" secondItem="2rc-MO-kyt" secondAttribute="centerX" id="uvJ-bR-Ajn"/>
+                            <constraint firstItem="2rc-MO-kyt" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.7" constant="1" id="v9B-O4-eHb"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="jZW-hF-eUg"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="278" y="324"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="quickCountLogo" width="400" height="400"/>
+    </resources>
 </document>

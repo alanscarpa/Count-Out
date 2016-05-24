@@ -8,13 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		4533B4ED1CE8D78400E85B65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4533B4EC1CE8D78400E85B65 /* AppDelegate.swift */; };
-		4533B4EF1CE8D78400E85B65 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4533B4EE1CE8D78400E85B65 /* ViewController.swift */; };
+		4533B4EF1CE8D78400E85B65 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4533B4EE1CE8D78400E85B65 /* LoginViewController.swift */; };
 		4533B4F21CE8D78400E85B65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4533B4F01CE8D78400E85B65 /* Main.storyboard */; };
 		4533B4F41CE8D78400E85B65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4533B4F31CE8D78400E85B65 /* Assets.xcassets */; };
-		4533B4F71CE8D78400E85B65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4533B4F51CE8D78400E85B65 /* LaunchScreen.storyboard */; };
 		4533B5001CE8DE0700E85B65 /* BTDiscovery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4533B4FF1CE8DE0700E85B65 /* BTDiscovery.swift */; };
 		4533B5021CE8DE4C00E85B65 /* BTService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4533B5011CE8DE4C00E85B65 /* BTService.swift */; };
-		4578A5E21CF497BE00BB8F9E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4578A5E11CF497BE00BB8F9E /* Default-568h@2x.png */; };
+		45792BCE1CF4D161004E8C01 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45792BCC1CF4D161004E8C01 /* Launch Screen.storyboard */; };
+		45792BD71CF4D5AA004E8C01 /* Dosis-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 45792BD01CF4D5AA004E8C01 /* Dosis-Bold.ttf */; };
+		45792BD81CF4D5AA004E8C01 /* Dosis-Book.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 45792BD11CF4D5AA004E8C01 /* Dosis-Book.ttf */; };
+		45792BD91CF4D5AA004E8C01 /* Dosis-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 45792BD21CF4D5AA004E8C01 /* Dosis-ExtraBold.ttf */; };
+		45792BDA1CF4D5AA004E8C01 /* Dosis-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 45792BD31CF4D5AA004E8C01 /* Dosis-ExtraLight.ttf */; };
+		45792BDB1CF4D5AA004E8C01 /* Dosis-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 45792BD41CF4D5AA004E8C01 /* Dosis-Light.ttf */; };
+		45792BDC1CF4D5AA004E8C01 /* Dosis-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 45792BD51CF4D5AA004E8C01 /* Dosis-Medium.ttf */; };
+		45792BDD1CF4D5AA004E8C01 /* Dosis-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 45792BD61CF4D5AA004E8C01 /* Dosis-SemiBold.ttf */; };
+		45DAB0681CF4A0D300A03223 /* loginVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 45DAB0671CF4A0D300A03223 /* loginVideo.mp4 */; };
 		45DE89BA1CF2B6C6001C821B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DE89B91CF2B6C6001C821B /* Constants.swift */; };
 		45DE89BC1CF2BAE5001C821B /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DE89BB1CF2BAE5001C821B /* Errors.swift */; };
 		45DE89BE1CF2C374001C821B /* BluetoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DE89BD1CF2C374001C821B /* BluetoothManager.swift */; };
@@ -24,14 +31,21 @@
 /* Begin PBXFileReference section */
 		4533B4E91CE8D78400E85B65 /* QuickCount.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickCount.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4533B4EC1CE8D78400E85B65 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4533B4EE1CE8D78400E85B65 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4533B4EE1CE8D78400E85B65 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		4533B4F11CE8D78400E85B65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4533B4F31CE8D78400E85B65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		4533B4F61CE8D78400E85B65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4533B4F81CE8D78400E85B65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4533B4FF1CE8DE0700E85B65 /* BTDiscovery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTDiscovery.swift; sourceTree = "<group>"; };
 		4533B5011CE8DE4C00E85B65 /* BTService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTService.swift; sourceTree = "<group>"; };
-		4578A5E11CF497BE00BB8F9E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		45792BCD1CF4D161004E8C01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Launch Screen.storyboard"; sourceTree = "<group>"; };
+		45792BD01CF4D5AA004E8C01 /* Dosis-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Dosis-Bold.ttf"; sourceTree = "<group>"; };
+		45792BD11CF4D5AA004E8C01 /* Dosis-Book.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Dosis-Book.ttf"; sourceTree = "<group>"; };
+		45792BD21CF4D5AA004E8C01 /* Dosis-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Dosis-ExtraBold.ttf"; sourceTree = "<group>"; };
+		45792BD31CF4D5AA004E8C01 /* Dosis-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Dosis-ExtraLight.ttf"; sourceTree = "<group>"; };
+		45792BD41CF4D5AA004E8C01 /* Dosis-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Dosis-Light.ttf"; sourceTree = "<group>"; };
+		45792BD51CF4D5AA004E8C01 /* Dosis-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Dosis-Medium.ttf"; sourceTree = "<group>"; };
+		45792BD61CF4D5AA004E8C01 /* Dosis-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Dosis-SemiBold.ttf"; sourceTree = "<group>"; };
+		45DAB0671CF4A0D300A03223 /* loginVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = loginVideo.mp4; sourceTree = "<group>"; };
 		45DE89B91CF2B6C6001C821B /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		45DE89BB1CF2BAE5001C821B /* Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		45DE89BD1CF2C374001C821B /* BluetoothManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetoothManager.swift; sourceTree = "<group>"; };
@@ -52,7 +66,6 @@
 		4533B4E01CE8D78400E85B65 = {
 			isa = PBXGroup;
 			children = (
-				4578A5E11CF497BE00BB8F9E /* Default-568h@2x.png */,
 				4533B4EB1CE8D78400E85B65 /* QuickCount */,
 				4533B4EA1CE8D78400E85B65 /* Products */,
 			);
@@ -70,13 +83,14 @@
 			isa = PBXGroup;
 			children = (
 				4533B4EC1CE8D78400E85B65 /* AppDelegate.swift */,
+				45DAB0641CF49CBE00A03223 /* Supporting Files */,
 				45DE89BF1CF2D789001C821B /* Extension */,
 				45DE89B81CF2B69E001C821B /* Utilities */,
 				4533B4FE1CE8DDE900E85B65 /* Bluetooth */,
-				4533B4EE1CE8D78400E85B65 /* ViewController.swift */,
+				45DAB0691CF4A5B900A03223 /* Screens */,
 				4533B4F01CE8D78400E85B65 /* Main.storyboard */,
+				45792BCC1CF4D161004E8C01 /* Launch Screen.storyboard */,
 				4533B4F31CE8D78400E85B65 /* Assets.xcassets */,
-				4533B4F51CE8D78400E85B65 /* LaunchScreen.storyboard */,
 				4533B4F81CE8D78400E85B65 /* Info.plist */,
 			);
 			path = QuickCount;
@@ -90,6 +104,45 @@
 				4533B5011CE8DE4C00E85B65 /* BTService.swift */,
 			);
 			path = Bluetooth;
+			sourceTree = "<group>";
+		};
+		45792BCF1CF4D595004E8C01 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				45792BD01CF4D5AA004E8C01 /* Dosis-Bold.ttf */,
+				45792BD11CF4D5AA004E8C01 /* Dosis-Book.ttf */,
+				45792BD21CF4D5AA004E8C01 /* Dosis-ExtraBold.ttf */,
+				45792BD31CF4D5AA004E8C01 /* Dosis-ExtraLight.ttf */,
+				45792BD41CF4D5AA004E8C01 /* Dosis-Light.ttf */,
+				45792BD51CF4D5AA004E8C01 /* Dosis-Medium.ttf */,
+				45792BD61CF4D5AA004E8C01 /* Dosis-SemiBold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		45DAB0641CF49CBE00A03223 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				45792BCF1CF4D595004E8C01 /* Fonts */,
+				45DAB0671CF4A0D300A03223 /* loginVideo.mp4 */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		45DAB0691CF4A5B900A03223 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				45DAB06A1CF4A5D700A03223 /* Login */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		45DAB06A1CF4A5D700A03223 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				4533B4EE1CE8D78400E85B65 /* LoginViewController.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 		45DE89B81CF2B69E001C821B /* Utilities */ = {
@@ -169,10 +222,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4533B4F71CE8D78400E85B65 /* LaunchScreen.storyboard in Resources */,
-				4578A5E21CF497BE00BB8F9E /* Default-568h@2x.png in Resources */,
 				4533B4F41CE8D78400E85B65 /* Assets.xcassets in Resources */,
+				45792BDB1CF4D5AA004E8C01 /* Dosis-Light.ttf in Resources */,
 				4533B4F21CE8D78400E85B65 /* Main.storyboard in Resources */,
+				45792BDD1CF4D5AA004E8C01 /* Dosis-SemiBold.ttf in Resources */,
+				45792BD81CF4D5AA004E8C01 /* Dosis-Book.ttf in Resources */,
+				45792BDA1CF4D5AA004E8C01 /* Dosis-ExtraLight.ttf in Resources */,
+				45792BCE1CF4D161004E8C01 /* Launch Screen.storyboard in Resources */,
+				45792BDC1CF4D5AA004E8C01 /* Dosis-Medium.ttf in Resources */,
+				45792BD91CF4D5AA004E8C01 /* Dosis-ExtraBold.ttf in Resources */,
+				45DAB0681CF4A0D300A03223 /* loginVideo.mp4 in Resources */,
+				45792BD71CF4D5AA004E8C01 /* Dosis-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,7 +248,7 @@
 				4533B5001CE8DE0700E85B65 /* BTDiscovery.swift in Sources */,
 				4533B5021CE8DE4C00E85B65 /* BTService.swift in Sources */,
 				45DE89BE1CF2C374001C821B /* BluetoothManager.swift in Sources */,
-				4533B4EF1CE8D78400E85B65 /* ViewController.swift in Sources */,
+				4533B4EF1CE8D78400E85B65 /* LoginViewController.swift in Sources */,
 				45DE89BC1CF2BAE5001C821B /* Errors.swift in Sources */,
 				4533B4ED1CE8D78400E85B65 /* AppDelegate.swift in Sources */,
 			);
@@ -205,12 +265,12 @@
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		4533B4F51CE8D78400E85B65 /* LaunchScreen.storyboard */ = {
+		45792BCC1CF4D161004E8C01 /* Launch Screen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				4533B4F61CE8D78400E85B65 /* Base */,
+				45792BCD1CF4D161004E8C01 /* Base */,
 			);
-			name = LaunchScreen.storyboard;
+			name = "Launch Screen.storyboard";
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
