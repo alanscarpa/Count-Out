@@ -11,7 +11,6 @@ import CoreBluetooth
 
 class ViewController: UIViewController, BluetoothManagerDelegate {
     let bluetoothManager = BluetoothManager.sharedInstance
-    @IBOutlet weak var weightLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,7 +26,6 @@ class ViewController: UIViewController, BluetoothManagerDelegate {
     
     func receivedWeightReading(weight: String) {
         // TODO: Only get 1 weight reading
-        weightLabel.text = weight
         print(weight)
     }
     

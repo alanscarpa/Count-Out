@@ -14,6 +14,7 @@
 		4533B4F71CE8D78400E85B65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4533B4F51CE8D78400E85B65 /* LaunchScreen.storyboard */; };
 		4533B5001CE8DE0700E85B65 /* BTDiscovery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4533B4FF1CE8DE0700E85B65 /* BTDiscovery.swift */; };
 		4533B5021CE8DE4C00E85B65 /* BTService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4533B5011CE8DE4C00E85B65 /* BTService.swift */; };
+		4578A5E21CF497BE00BB8F9E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4578A5E11CF497BE00BB8F9E /* Default-568h@2x.png */; };
 		45DE89BA1CF2B6C6001C821B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DE89B91CF2B6C6001C821B /* Constants.swift */; };
 		45DE89BC1CF2BAE5001C821B /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DE89BB1CF2BAE5001C821B /* Errors.swift */; };
 		45DE89BE1CF2C374001C821B /* BluetoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DE89BD1CF2C374001C821B /* BluetoothManager.swift */; };
@@ -21,7 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4533B4E91CE8D78400E85B65 /* Counted.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Counted.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4533B4E91CE8D78400E85B65 /* QuickCount.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickCount.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4533B4EC1CE8D78400E85B65 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4533B4EE1CE8D78400E85B65 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4533B4F11CE8D78400E85B65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -30,6 +31,7 @@
 		4533B4F81CE8D78400E85B65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4533B4FF1CE8DE0700E85B65 /* BTDiscovery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTDiscovery.swift; sourceTree = "<group>"; };
 		4533B5011CE8DE4C00E85B65 /* BTService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTService.swift; sourceTree = "<group>"; };
+		4578A5E11CF497BE00BB8F9E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		45DE89B91CF2B6C6001C821B /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		45DE89BB1CF2BAE5001C821B /* Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		45DE89BD1CF2C374001C821B /* BluetoothManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetoothManager.swift; sourceTree = "<group>"; };
@@ -50,7 +52,8 @@
 		4533B4E01CE8D78400E85B65 = {
 			isa = PBXGroup;
 			children = (
-				4533B4EB1CE8D78400E85B65 /* Counted */,
+				4578A5E11CF497BE00BB8F9E /* Default-568h@2x.png */,
+				4533B4EB1CE8D78400E85B65 /* QuickCount */,
 				4533B4EA1CE8D78400E85B65 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -58,12 +61,12 @@
 		4533B4EA1CE8D78400E85B65 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4533B4E91CE8D78400E85B65 /* Counted.app */,
+				4533B4E91CE8D78400E85B65 /* QuickCount.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4533B4EB1CE8D78400E85B65 /* Counted */ = {
+		4533B4EB1CE8D78400E85B65 /* QuickCount */ = {
 			isa = PBXGroup;
 			children = (
 				4533B4EC1CE8D78400E85B65 /* AppDelegate.swift */,
@@ -76,7 +79,7 @@
 				4533B4F51CE8D78400E85B65 /* LaunchScreen.storyboard */,
 				4533B4F81CE8D78400E85B65 /* Info.plist */,
 			);
-			path = Counted;
+			path = QuickCount;
 			sourceTree = "<group>";
 		};
 		4533B4FE1CE8DDE900E85B65 /* Bluetooth */ = {
@@ -110,9 +113,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4533B4E81CE8D78400E85B65 /* Counted */ = {
+		4533B4E81CE8D78400E85B65 /* QuickCount */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4533B4FB1CE8D78400E85B65 /* Build configuration list for PBXNativeTarget "Counted" */;
+			buildConfigurationList = 4533B4FB1CE8D78400E85B65 /* Build configuration list for PBXNativeTarget "QuickCount" */;
 			buildPhases = (
 				4533B4E51CE8D78400E85B65 /* Sources */,
 				4533B4E61CE8D78400E85B65 /* Frameworks */,
@@ -122,9 +125,9 @@
 			);
 			dependencies = (
 			);
-			name = Counted;
+			name = QuickCount;
 			productName = Counted;
-			productReference = 4533B4E91CE8D78400E85B65 /* Counted.app */;
+			productReference = 4533B4E91CE8D78400E85B65 /* QuickCount.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -143,7 +146,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 4533B4E41CE8D78400E85B65 /* Build configuration list for PBXProject "Counted" */;
+			buildConfigurationList = 4533B4E41CE8D78400E85B65 /* Build configuration list for PBXProject "QuickCount" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -156,7 +159,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4533B4E81CE8D78400E85B65 /* Counted */,
+				4533B4E81CE8D78400E85B65 /* QuickCount */,
 			);
 		};
 /* End PBXProject section */
@@ -167,6 +170,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4533B4F71CE8D78400E85B65 /* LaunchScreen.storyboard in Resources */,
+				4578A5E21CF497BE00BB8F9E /* Default-568h@2x.png in Resources */,
 				4533B4F41CE8D78400E85B65 /* Assets.xcassets in Resources */,
 				4533B4F21CE8D78400E85B65 /* Main.storyboard in Resources */,
 			);
@@ -300,11 +304,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				INFOPLIST_FILE = Counted/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/QuickCount/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.counted.Counted;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.quickcount.QuickCount;
+				PRODUCT_NAME = QuickCount;
 			};
 			name = Debug;
 		};
@@ -313,18 +317,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				INFOPLIST_FILE = Counted/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/QuickCount/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.counted.Counted;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.quickcount.QuickCount;
+				PRODUCT_NAME = QuickCount;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4533B4E41CE8D78400E85B65 /* Build configuration list for PBXProject "Counted" */ = {
+		4533B4E41CE8D78400E85B65 /* Build configuration list for PBXProject "QuickCount" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4533B4F91CE8D78400E85B65 /* Debug */,
@@ -333,7 +337,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4533B4FB1CE8D78400E85B65 /* Build configuration list for PBXNativeTarget "Counted" */ = {
+		4533B4FB1CE8D78400E85B65 /* Build configuration list for PBXNativeTarget "QuickCount" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4533B4FC1CE8D78400E85B65 /* Debug */,
