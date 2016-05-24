@@ -38,7 +38,7 @@ class LoginViewController: UIViewController, BluetoothManagerDelegate {
         }
         let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.Dark)
         let blurEffectView = UIVisualEffectView(effect: blurEffect)
-        blurEffectView.alpha = 0.8
+        blurEffectView.alpha = 0.3
         blurEffectView.frame = self.view.bounds
         blurEffectView.autoresizingMask = [.FlexibleWidth, .FlexibleHeight]
         self.view.insertSubview(blurEffectView, atIndex: 1)
