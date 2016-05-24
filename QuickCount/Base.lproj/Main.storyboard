@@ -52,6 +52,9 @@
                                         <exclude reference="t8K-hG-X81"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="logInButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fbw-Sd-EAx"/>
+                                </connections>
                             </button>
                         </subviews>
                         <constraints>

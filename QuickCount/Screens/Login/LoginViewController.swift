@@ -44,6 +44,10 @@ class LoginViewController: UIViewController, BluetoothManagerDelegate {
         self.view.insertSubview(blurEffectView, atIndex: 1)
     }
     
+    @IBAction func logInButtonTapped(sender: AnyObject) {
+        
+    }
+    
     // MARK: BluetoothManagerDelegate
     
     func gettingWeightReading() {

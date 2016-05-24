@@ -38,5 +38,7 @@
 	<array>
 		<string>Dosis-Bold.ttf</string>
 	</array>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<false/>
 </dict>
 </plist>
