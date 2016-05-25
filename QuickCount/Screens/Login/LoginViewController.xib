@@ -50,6 +50,9 @@
                             <exclude reference="0Qk-hj-eEt"/>
                         </mask>
                     </variation>
+                    <connections>
+                        <action selector="logInButtonTapped:" destination="-1" eventType="touchUpInside" id="sHy-Rn-Pk8"/>
+                    </connections>
                 </button>
             </subviews>
             <constraints>

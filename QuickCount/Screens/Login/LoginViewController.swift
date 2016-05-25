@@ -9,17 +9,25 @@
 import UIKit
 import CoreBluetooth
 import MediaPlayer
+import PureLayout
 
 class LoginViewController: UIViewController, BluetoothManagerDelegate {
     let bluetoothManager = BluetoothManager.sharedInstance
     var player = MPMoviePlayerController()
     
+    let mainVC = MainViewController.ip_fromNib()
+    var bottomConstraint = NSLayoutConstraint()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        setUpBluetooth()
+        setUpBackgroundVideo()
+        setUpMainViewController()
+    }
+    
+    func setUpBluetooth() {
         bluetoothManager.delegate = self
         bluetoothManager.connectToScale()
-        
-        setUpBackgroundVideo()
     }
     
     func setUpBackgroundVideo() {
@@ -44,8 +52,24 @@ class LoginViewController: UIViewController, BluetoothManagerDelegate {
         self.view.insertSubview(blurEffectView, atIndex: 1)
     }
     
+    func setUpMainViewController() {
+        ip_addChildViewController(mainVC)
+        bottomConstraint = mainVC.view.autoPinEdge(.Bottom, toEdge: .Bottom, ofView: self.view, withOffset: -self.view.ip_height)
+        mainVC.view.autoAlignAxisToSuperviewAxis(.Vertical)
+        mainVC.view.autoSetDimensionsToSize(self.view.ip_frameSize)
+    }
+    
     @IBAction func logInButtonTapped(sender: AnyObject) {
-        
+        UIView.animateWithDuration(0.5, animations: {
+            self.bottomConstraint.constant = 0
+            self.view.layoutIfNeeded()
+            }) { finished in
+               self.clearLoginInformation()
+        }
+    }
+    
+    func clearLoginInformation() {
+        // TODO: Clear login info
     }
     
     // MARK: BluetoothManagerDelegate

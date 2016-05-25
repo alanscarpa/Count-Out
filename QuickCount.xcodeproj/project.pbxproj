@@ -25,6 +25,8 @@
 		45954DFF1CF4DDF300244AA4 /* UIColor+QuickCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45954DFE1CF4DDF300244AA4 /* UIColor+QuickCount.swift */; };
 		45954E021CF52A0B00244AA4 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45954E011CF52A0B00244AA4 /* RootViewController.swift */; };
 		45954E041CF52C4300244AA4 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45954E031CF52C4300244AA4 /* LoginViewController.xib */; };
+		45954E081CF52DF500244AA4 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45954E061CF52DF500244AA4 /* MainViewController.swift */; };
+		45954E091CF52DF500244AA4 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45954E071CF52DF500244AA4 /* MainViewController.xib */; };
 		45DAB0681CF4A0D300A03223 /* loginVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 45DAB0671CF4A0D300A03223 /* loginVideo.mp4 */; };
 		45DE89BA1CF2B6C6001C821B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DE89B91CF2B6C6001C821B /* Constants.swift */; };
 		45DE89BC1CF2BAE5001C821B /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DE89BB1CF2BAE5001C821B /* Errors.swift */; };
@@ -55,6 +57,8 @@
 		45954DFE1CF4DDF300244AA4 /* UIColor+QuickCount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+QuickCount.swift"; sourceTree = "<group>"; };
 		45954E011CF52A0B00244AA4 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		45954E031CF52C4300244AA4 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		45954E061CF52DF500244AA4 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		45954E071CF52DF500244AA4 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		45DAB0671CF4A0D300A03223 /* loginVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = loginVideo.mp4; sourceTree = "<group>"; };
 		45DE89B91CF2B6C6001C821B /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		45DE89BB1CF2BAE5001C821B /* Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
@@ -151,6 +155,15 @@
 			path = Root;
 			sourceTree = "<group>";
 		};
+		45954E051CF52DCA00244AA4 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				45954E061CF52DF500244AA4 /* MainViewController.swift */,
+				45954E071CF52DF500244AA4 /* MainViewController.xib */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
 		45DAB0641CF49CBE00A03223 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -163,6 +176,7 @@
 		45DAB0691CF4A5B900A03223 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				45954E051CF52DCA00244AA4 /* Main */,
 				45954E001CF529F100244AA4 /* Root */,
 				45DAB06A1CF4A5D700A03223 /* Login */,
 			);
@@ -284,6 +298,7 @@
 				45792BDA1CF4D5AA004E8C01 /* Dosis-ExtraLight.ttf in Resources */,
 				45792BCE1CF4D161004E8C01 /* Launch Screen.storyboard in Resources */,
 				45792BDC1CF4D5AA004E8C01 /* Dosis-Medium.ttf in Resources */,
+				45954E091CF52DF500244AA4 /* MainViewController.xib in Resources */,
 				45954E041CF52C4300244AA4 /* LoginViewController.xib in Resources */,
 				45792BD91CF4D5AA004E8C01 /* Dosis-ExtraBold.ttf in Resources */,
 				45DAB0681CF4A0D300A03223 /* loginVideo.mp4 in Resources */,
@@ -347,6 +362,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				45954DFB1CF4DA7700244AA4 /* QCButton.swift in Sources */,
+				45954E081CF52DF500244AA4 /* MainViewController.swift in Sources */,
 				45DE89BA1CF2B6C6001C821B /* Constants.swift in Sources */,
 				45954E021CF52A0B00244AA4 /* RootViewController.swift in Sources */,
 				45954DFF1CF4DDF300244AA4 /* UIColor+QuickCount.swift in Sources */,
