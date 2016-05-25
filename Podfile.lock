@@ -1,0 +1,18 @@
+PODS:
+  - Intrepid (0.3.3):
+    - Intrepid/Core (= 0.3.3)
+  - Intrepid/Core (0.3.3):
+    - IP-UIKit-Wisdom (= 0.0.9)
+  - IP-UIKit-Wisdom (0.0.9)
+  - PureLayout (3.0.1)
+
+DEPENDENCIES:
+  - Intrepid
+  - PureLayout
+
+SPEC CHECKSUMS:
+  Intrepid: bb00953ec36cfb8920742dd346e377d950189016
+  IP-UIKit-Wisdom: cd9838571e97427a0c61c05d856eaaca9afd7c1a
+  PureLayout: f35f5384c9c4e4479df041dbe33ad7577b71ddfb
+
+COCOAPODS: 0.39.0
