@@ -49,7 +49,7 @@
 		4533B4EC1CE8D78400E85B65 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4533B4EE1CE8D78400E85B65 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		4533B4F31CE8D78400E85B65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		4533B4F81CE8D78400E85B65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4533B4F81CE8D78400E85B65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
 		4533B4FF1CE8DE0700E85B65 /* BTDiscovery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTDiscovery.swift; sourceTree = "<group>"; };
 		4533B5011CE8DE4C00E85B65 /* BTService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTService.swift; sourceTree = "<group>"; };
 		45792BCD1CF4D161004E8C01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Launch Screen.storyboard"; sourceTree = "<group>"; };
@@ -124,9 +124,7 @@
 				45DE89B81CF2B69E001C821B /* Utilities */,
 				4533B4FE1CE8DDE900E85B65 /* Bluetooth */,
 				45DAB0691CF4A5B900A03223 /* Screens */,
-				45792BCC1CF4D161004E8C01 /* Launch Screen.storyboard */,
 				4533B4F31CE8D78400E85B65 /* Assets.xcassets */,
-				4533B4F81CE8D78400E85B65 /* Info.plist */,
 			);
 			path = QuickCount;
 			sourceTree = "<group>";
@@ -219,8 +217,10 @@
 		45DAB0641CF49CBE00A03223 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				45792BCF1CF4D595004E8C01 /* Fonts */,
+				4533B4F81CE8D78400E85B65 /* Info.plist */,
 				45DAB0671CF4A0D300A03223 /* loginVideo.mp4 */,
+				45792BCC1CF4D161004E8C01 /* Launch Screen.storyboard */,
+				45792BCF1CF4D595004E8C01 /* Fonts */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -230,11 +230,11 @@
 			children = (
 				45954E271CF67A5700244AA4 /* Settings */,
 				45954E221CF67A1D00244AA4 /* Reports */,
-				45954E1D1CF675DD00244AA4 /* Home */,
 				45954E121CF6712C00244AA4 /* Weigh */,
+				45954E1D1CF675DD00244AA4 /* Home */,
 				45954E051CF52DCA00244AA4 /* Main */,
-				45954E001CF529F100244AA4 /* Root */,
 				45DAB06A1CF4A5D700A03223 /* Login */,
+				45954E001CF529F100244AA4 /* Root */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -450,6 +450,7 @@
 				45792BCD1CF4D161004E8C01 /* Base */,
 			);
 			name = "Launch Screen.storyboard";
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
