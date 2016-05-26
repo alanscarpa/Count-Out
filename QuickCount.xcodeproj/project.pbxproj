@@ -31,6 +31,10 @@
 		45954E1C1CF674E100244AA4 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45954E1A1CF674E100244AA4 /* MainViewController.xib */; };
 		45954E201CF675F500244AA4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45954E1E1CF675F500244AA4 /* HomeViewController.swift */; };
 		45954E211CF675F500244AA4 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45954E1F1CF675F500244AA4 /* HomeViewController.xib */; };
+		45954E251CF67A5200244AA4 /* ReportsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45954E231CF67A5200244AA4 /* ReportsViewController.swift */; };
+		45954E261CF67A5200244AA4 /* ReportsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45954E241CF67A5200244AA4 /* ReportsViewController.xib */; };
+		45954E2A1CF67A6C00244AA4 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45954E281CF67A6C00244AA4 /* SettingsViewController.swift */; };
+		45954E2B1CF67A6C00244AA4 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45954E291CF67A6C00244AA4 /* SettingsViewController.xib */; };
 		45DAB0681CF4A0D300A03223 /* loginVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 45DAB0671CF4A0D300A03223 /* loginVideo.mp4 */; };
 		45DE89BA1CF2B6C6001C821B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DE89B91CF2B6C6001C821B /* Constants.swift */; };
 		45DE89BC1CF2BAE5001C821B /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DE89BB1CF2BAE5001C821B /* Errors.swift */; };
@@ -67,6 +71,10 @@
 		45954E1A1CF674E100244AA4 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		45954E1E1CF675F500244AA4 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		45954E1F1CF675F500244AA4 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		45954E231CF67A5200244AA4 /* ReportsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportsViewController.swift; sourceTree = "<group>"; };
+		45954E241CF67A5200244AA4 /* ReportsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReportsViewController.xib; sourceTree = "<group>"; };
+		45954E281CF67A6C00244AA4 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		45954E291CF67A6C00244AA4 /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
 		45DAB0671CF4A0D300A03223 /* loginVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = loginVideo.mp4; sourceTree = "<group>"; };
 		45DE89B91CF2B6C6001C821B /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		45DE89BB1CF2BAE5001C821B /* Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
@@ -190,6 +198,24 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
+		45954E221CF67A1D00244AA4 /* Reports */ = {
+			isa = PBXGroup;
+			children = (
+				45954E231CF67A5200244AA4 /* ReportsViewController.swift */,
+				45954E241CF67A5200244AA4 /* ReportsViewController.xib */,
+			);
+			path = Reports;
+			sourceTree = "<group>";
+		};
+		45954E271CF67A5700244AA4 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				45954E281CF67A6C00244AA4 /* SettingsViewController.swift */,
+				45954E291CF67A6C00244AA4 /* SettingsViewController.xib */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
 		45DAB0641CF49CBE00A03223 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -202,6 +228,8 @@
 		45DAB0691CF4A5B900A03223 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				45954E271CF67A5700244AA4 /* Settings */,
+				45954E221CF67A1D00244AA4 /* Reports */,
 				45954E1D1CF675DD00244AA4 /* Home */,
 				45954E121CF6712C00244AA4 /* Weigh */,
 				45954E051CF52DCA00244AA4 /* Main */,
@@ -321,6 +349,7 @@
 			files = (
 				4533B4F41CE8D78400E85B65 /* Assets.xcassets in Resources */,
 				45954E1C1CF674E100244AA4 /* MainViewController.xib in Resources */,
+				45954E261CF67A5200244AA4 /* ReportsViewController.xib in Resources */,
 				45792BDB1CF4D5AA004E8C01 /* Dosis-Light.ttf in Resources */,
 				45792BDD1CF4D5AA004E8C01 /* Dosis-SemiBold.ttf in Resources */,
 				45792BD81CF4D5AA004E8C01 /* Dosis-Book.ttf in Resources */,
@@ -329,6 +358,7 @@
 				45792BCE1CF4D161004E8C01 /* Launch Screen.storyboard in Resources */,
 				45792BDC1CF4D5AA004E8C01 /* Dosis-Medium.ttf in Resources */,
 				45954E041CF52C4300244AA4 /* LoginViewController.xib in Resources */,
+				45954E2B1CF67A6C00244AA4 /* SettingsViewController.xib in Resources */,
 				45792BD91CF4D5AA004E8C01 /* Dosis-ExtraBold.ttf in Resources */,
 				45DAB0681CF4A0D300A03223 /* loginVideo.mp4 in Resources */,
 				45792BD71CF4D5AA004E8C01 /* Dosis-Bold.ttf in Resources */,
@@ -395,6 +425,7 @@
 				45DE89BA1CF2B6C6001C821B /* Constants.swift in Sources */,
 				45954E021CF52A0B00244AA4 /* RootViewController.swift in Sources */,
 				45954E151CF6725D00244AA4 /* WeighViewController.swift in Sources */,
+				45954E251CF67A5200244AA4 /* ReportsViewController.swift in Sources */,
 				45954DFF1CF4DDF300244AA4 /* UIColor+QuickCount.swift in Sources */,
 				45954E201CF675F500244AA4 /* HomeViewController.swift in Sources */,
 				45DE89C11CF2D7BE001C821B /* UIAlertController+Counted.swift in Sources */,
@@ -402,6 +433,7 @@
 				45954E1B1CF674E100244AA4 /* MainViewController.swift in Sources */,
 				45954DFD1CF4DAEE00244AA4 /* UIFont+QuickCount.swift in Sources */,
 				4533B5021CE8DE4C00E85B65 /* BTService.swift in Sources */,
+				45954E2A1CF67A6C00244AA4 /* SettingsViewController.swift in Sources */,
 				45DE89BE1CF2C374001C821B /* BluetoothManager.swift in Sources */,
 				4533B4EF1CE8D78400E85B65 /* LoginViewController.swift in Sources */,
 				45DE89BC1CF2BAE5001C821B /* Errors.swift in Sources */,

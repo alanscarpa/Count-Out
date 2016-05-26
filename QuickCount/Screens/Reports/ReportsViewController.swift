@@ -1,5 +1,5 @@
 //
-//  WeighViewController.swift
+//  ReportsViewController.swift
 //  QuickCount
 //
 //  Created by Alan Scarpa on 5/25/16.
@@ -8,11 +8,11 @@
 
 import UIKit
 
-class WeighViewController: UIViewController {
+class ReportsViewController: UIViewController {
 
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
-        title = "Weigh"
+        title = "Reports"
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -21,6 +21,7 @@ class WeighViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
         // Do any additional setup after loading the view.
     }
 
