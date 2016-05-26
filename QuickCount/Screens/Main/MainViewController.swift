@@ -12,14 +12,18 @@ class MainViewController: UIViewController {
 
     let mainTabBarController = UITabBarController()
     
-    let vc1 = HomeViewController.ip_fromNib()
-    let vc2 = WeighViewController.ip_fromNib()
+    let homeViewController = HomeViewController.ip_fromNib()
+    let weighViewController = WeighViewController.ip_fromNib()
+    let reportsViewController = ReportsViewController.ip_fromNib()
+    let settingsViewController = SettingsViewController.ip_fromNib()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setUpTabBar()
+    }
     
-        mainTabBarController.viewControllers = [vc1, vc2]
-        mainTabBarController.selectedIndex = 0
+    func setUpTabBar() {
+        mainTabBarController.viewControllers = [homeViewController, weighViewController, reportsViewController, settingsViewController]
         ip_addChildViewController(mainTabBarController)
         mainTabBarController.view.autoPinEdgesToSuperviewEdges()
     }
