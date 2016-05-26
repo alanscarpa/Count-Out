@@ -16,7 +16,7 @@ class RootViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.showLoginViewController()
+        showLoginViewController()
     }
     
     func showLoginViewController() {

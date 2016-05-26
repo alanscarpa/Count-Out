@@ -22,6 +22,10 @@ class LoginViewController: UIViewController, BluetoothManagerDelegate {
         super.viewDidLoad()
         setUpBluetooth()
         setUpBackgroundVideo()
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
         setUpMainViewController()
     }
     
@@ -65,6 +69,7 @@ class LoginViewController: UIViewController, BluetoothManagerDelegate {
             self.view.layoutIfNeeded()
             }) { finished in
                self.clearLoginInformation()
+                // TODO: Stop video playback & resume on returning
         }
     }
     
