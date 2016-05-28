@@ -12,10 +12,10 @@ class MainViewController: UIViewController {
 
     let mainTabBarController = UITabBarController()
     
-    let homeViewController = HomeViewController.ip_fromNib()
-    let weighViewController = WeighViewController.ip_fromNib()
-    let reportsViewController = ReportsViewController.ip_fromNib()
-    let settingsViewController = SettingsViewController.ip_fromNib()
+    let homeViewController = QCNavigationController(rootViewController: HomeViewController.ip_fromNib())
+    let weighViewController = QCNavigationController(rootViewController: WeighViewController.ip_fromNib())
+    let reportsViewController = QCNavigationController(rootViewController: ReportsViewController.ip_fromNib())
+    let settingsViewController = QCNavigationController(rootViewController: SettingsViewController.ip_fromNib())
     
     override func viewDidLoad() {
         super.viewDidLoad()

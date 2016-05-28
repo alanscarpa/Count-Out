@@ -12,6 +12,8 @@
 		4533B4F41CE8D78400E85B65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4533B4F31CE8D78400E85B65 /* Assets.xcassets */; };
 		4533B5001CE8DE0700E85B65 /* BTDiscovery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4533B4FF1CE8DE0700E85B65 /* BTDiscovery.swift */; };
 		4533B5021CE8DE4C00E85B65 /* BTService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4533B5011CE8DE4C00E85B65 /* BTService.swift */; };
+		453889C71CF9D432008EF468 /* QCNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453889C61CF9D432008EF468 /* QCNavigationController.swift */; };
+		453889CA1CF9D467008EF468 /* QCNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453889C91CF9D467008EF468 /* QCNavigationBar.swift */; };
 		45792BCE1CF4D161004E8C01 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45792BCC1CF4D161004E8C01 /* Launch Screen.storyboard */; };
 		45792BD71CF4D5AA004E8C01 /* Dosis-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 45792BD01CF4D5AA004E8C01 /* Dosis-Bold.ttf */; };
 		45792BD81CF4D5AA004E8C01 /* Dosis-Book.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 45792BD11CF4D5AA004E8C01 /* Dosis-Book.ttf */; };
@@ -52,6 +54,8 @@
 		4533B4F81CE8D78400E85B65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
 		4533B4FF1CE8DE0700E85B65 /* BTDiscovery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTDiscovery.swift; sourceTree = "<group>"; };
 		4533B5011CE8DE4C00E85B65 /* BTService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTService.swift; sourceTree = "<group>"; };
+		453889C61CF9D432008EF468 /* QCNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QCNavigationController.swift; sourceTree = "<group>"; };
+		453889C91CF9D467008EF468 /* QCNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QCNavigationBar.swift; sourceTree = "<group>"; };
 		45792BCD1CF4D161004E8C01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Launch Screen.storyboard"; sourceTree = "<group>"; };
 		45792BD01CF4D5AA004E8C01 /* Dosis-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Dosis-Bold.ttf"; sourceTree = "<group>"; };
 		45792BD11CF4D5AA004E8C01 /* Dosis-Book.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Dosis-Book.ttf"; sourceTree = "<group>"; };
@@ -118,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				4533B4EC1CE8D78400E85B65 /* AppDelegate.swift */,
+				453889C51CF9D3D3008EF468 /* Custom View Controllers */,
 				45954DF91CF4DA2900244AA4 /* Views */,
 				45DAB0641CF49CBE00A03223 /* Supporting Files */,
 				45DE89BF1CF2D789001C821B /* Extension */,
@@ -139,6 +144,14 @@
 			path = Bluetooth;
 			sourceTree = "<group>";
 		};
+		453889C51CF9D3D3008EF468 /* Custom View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				453889C61CF9D432008EF468 /* QCNavigationController.swift */,
+			);
+			path = "Custom View Controllers";
+			sourceTree = "<group>";
+		};
 		45792BCF1CF4D595004E8C01 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -157,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				45954DFA1CF4DA7700244AA4 /* QCButton.swift */,
+				453889C91CF9D467008EF468 /* QCNavigationBar.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -430,11 +444,13 @@
 				45954E201CF675F500244AA4 /* HomeViewController.swift in Sources */,
 				45DE89C11CF2D7BE001C821B /* UIAlertController+Counted.swift in Sources */,
 				4533B5001CE8DE0700E85B65 /* BTDiscovery.swift in Sources */,
+				453889C71CF9D432008EF468 /* QCNavigationController.swift in Sources */,
 				45954E1B1CF674E100244AA4 /* MainViewController.swift in Sources */,
 				45954DFD1CF4DAEE00244AA4 /* UIFont+QuickCount.swift in Sources */,
 				4533B5021CE8DE4C00E85B65 /* BTService.swift in Sources */,
 				45954E2A1CF67A6C00244AA4 /* SettingsViewController.swift in Sources */,
 				45DE89BE1CF2C374001C821B /* BluetoothManager.swift in Sources */,
+				453889CA1CF9D467008EF468 /* QCNavigationBar.swift in Sources */,
 				4533B4EF1CE8D78400E85B65 /* LoginViewController.swift in Sources */,
 				45DE89BC1CF2BAE5001C821B /* Errors.swift in Sources */,
 				4533B4ED1CE8D78400E85B65 /* AppDelegate.swift in Sources */,

@@ -26,7 +26,6 @@ class LoginViewController: UIViewController, BluetoothManagerDelegate {
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        setUpMainViewController()
     }
     
     func setUpBluetooth() {
@@ -63,7 +62,13 @@ class LoginViewController: UIViewController, BluetoothManagerDelegate {
         mainVC.view.autoSetDimensionsToSize(self.view.ip_frameSize)
     }
     
+    // MARK: Actions
+    
     @IBAction func logInButtonTapped(sender: AnyObject) {
+        // TODO:  Only set up if login was successful
+        setUpMainViewController()
+        self.view.layoutSubviews()
+        
         UIView.animateWithDuration(0.5, animations: {
             self.bottomConstraint.constant = 0
             self.view.layoutIfNeeded()
