@@ -10,14 +10,7 @@ import UIKit
 
 class QCNavigationBar: UINavigationBar {
 
-    let kNavBarHeight: CGFloat = 30
-    
-//    lazy var nowPlayingImageView: WNYCImageView = {
-//        let nowPlayingImageView = WNYCImageView()
-//        nowPlayingImageView.userInteractionEnabled = true
-//        nowPlayingImageView.autoSetDimensionsToSize(CGSize(width: 28, height: 17))
-//        return nowPlayingImageView
-//    }()
+    let kNavBarHeight: CGFloat = 44
     
     override func sizeThatFits(size: CGSize) -> CGSize {
         let newSize = CGSizeMake(self.frame.size.width, kNavBarHeight)
@@ -30,18 +23,6 @@ class QCNavigationBar: UINavigationBar {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-//        self.addSubview(nowPlayingImageView)
-//        configureNowPlayingIconState()
-//        
-//        // TODO: Remove these 2 lines when we begin fetching audio from network.  Only here so we can access expanded player.
-//        nowPlayingImageView.image = UIImage.animatedImageNamed("bTNNowPlaying-", duration: 0.7)
-//        nowPlayingImageView.hidden = false
-//        
-//        nowPlayingImageView.autoPinEdge(.Top, toEdge: .Top, ofView: self, withOffset: 8)
-//        nowPlayingImageView.autoPinEdge(.Trailing, toEdge: .Trailing, ofView: self, withOffset: -20)
-//        
-//        nowPlayingImageView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(WNYCNavigationBar.didTapNowPlayingImageView)))
-//        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(WNYCNavigationBar.configureNowPlayingIconState), name: PlaybackManagerStateChangedNotification, object: nil)
     }
 
 }

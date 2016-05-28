@@ -24,10 +24,6 @@ class LoginViewController: UIViewController, BluetoothManagerDelegate {
         setUpBackgroundVideo()
     }
     
-    override func viewDidAppear(animated: Bool) {
-        super.viewDidAppear(animated)
-    }
-    
     func setUpBluetooth() {
         bluetoothManager.delegate = self
         bluetoothManager.connectToScale()
@@ -49,7 +45,6 @@ class LoginViewController: UIViewController, BluetoothManagerDelegate {
         }
         let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.Dark)
         let blurEffectView = UIVisualEffectView(effect: blurEffect)
-        blurEffectView.alpha = 0.3
         blurEffectView.frame = self.view.bounds
         blurEffectView.autoresizingMask = [.FlexibleWidth, .FlexibleHeight]
         self.view.insertSubview(blurEffectView, atIndex: 1)

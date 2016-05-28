@@ -12,8 +12,6 @@ class QCNavigationController: UINavigationController {
 
     override init(rootViewController: UIViewController) {    
         super.init(navigationBarClass: QCNavigationBar.self, toolbarClass: nil)
-        // Needed for TabBarTitle
-        self.title = rootViewController.title
         self.setViewControllers([rootViewController], animated: false)
     }
     

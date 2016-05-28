@@ -13,6 +13,11 @@ class ReportsViewController: UIViewController {
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         title = "Reports"
+        navigationItem.title = title?.uppercaseString
+        tabBarItem = UITabBarItem(
+            title: title,
+            image: UIImage(named: "reportTab"),
+            tag: 2)
     }
     
     required init?(coder aDecoder: NSCoder) {

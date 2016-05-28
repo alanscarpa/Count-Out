@@ -27,8 +27,8 @@
 		45954DFF1CF4DDF300244AA4 /* UIColor+QuickCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45954DFE1CF4DDF300244AA4 /* UIColor+QuickCount.swift */; };
 		45954E021CF52A0B00244AA4 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45954E011CF52A0B00244AA4 /* RootViewController.swift */; };
 		45954E041CF52C4300244AA4 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45954E031CF52C4300244AA4 /* LoginViewController.xib */; };
-		45954E151CF6725D00244AA4 /* WeighViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45954E131CF6725D00244AA4 /* WeighViewController.swift */; };
-		45954E161CF6725D00244AA4 /* WeighViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45954E141CF6725D00244AA4 /* WeighViewController.xib */; };
+		45954E151CF6725D00244AA4 /* CountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45954E131CF6725D00244AA4 /* CountViewController.swift */; };
+		45954E161CF6725D00244AA4 /* CountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45954E141CF6725D00244AA4 /* CountViewController.xib */; };
 		45954E1B1CF674E100244AA4 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45954E191CF674E100244AA4 /* MainViewController.swift */; };
 		45954E1C1CF674E100244AA4 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45954E1A1CF674E100244AA4 /* MainViewController.xib */; };
 		45954E201CF675F500244AA4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45954E1E1CF675F500244AA4 /* HomeViewController.swift */; };
@@ -69,8 +69,8 @@
 		45954DFE1CF4DDF300244AA4 /* UIColor+QuickCount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+QuickCount.swift"; sourceTree = "<group>"; };
 		45954E011CF52A0B00244AA4 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		45954E031CF52C4300244AA4 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
-		45954E131CF6725D00244AA4 /* WeighViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeighViewController.swift; sourceTree = "<group>"; };
-		45954E141CF6725D00244AA4 /* WeighViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WeighViewController.xib; sourceTree = "<group>"; };
+		45954E131CF6725D00244AA4 /* CountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountViewController.swift; sourceTree = "<group>"; };
+		45954E141CF6725D00244AA4 /* CountViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CountViewController.xib; sourceTree = "<group>"; };
 		45954E191CF674E100244AA4 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		45954E1A1CF674E100244AA4 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		45954E1E1CF675F500244AA4 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -192,13 +192,13 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
-		45954E121CF6712C00244AA4 /* Weigh */ = {
+		45954E121CF6712C00244AA4 /* Count */ = {
 			isa = PBXGroup;
 			children = (
-				45954E131CF6725D00244AA4 /* WeighViewController.swift */,
-				45954E141CF6725D00244AA4 /* WeighViewController.xib */,
+				45954E131CF6725D00244AA4 /* CountViewController.swift */,
+				45954E141CF6725D00244AA4 /* CountViewController.xib */,
 			);
-			path = Weigh;
+			path = Count;
 			sourceTree = "<group>";
 		};
 		45954E1D1CF675DD00244AA4 /* Home */ = {
@@ -244,7 +244,7 @@
 			children = (
 				45954E271CF67A5700244AA4 /* Settings */,
 				45954E221CF67A1D00244AA4 /* Reports */,
-				45954E121CF6712C00244AA4 /* Weigh */,
+				45954E121CF6712C00244AA4 /* Count */,
 				45954E1D1CF675DD00244AA4 /* Home */,
 				45954E051CF52DCA00244AA4 /* Main */,
 				45DAB06A1CF4A5D700A03223 /* Login */,
@@ -376,7 +376,7 @@
 				45792BD91CF4D5AA004E8C01 /* Dosis-ExtraBold.ttf in Resources */,
 				45DAB0681CF4A0D300A03223 /* loginVideo.mp4 in Resources */,
 				45792BD71CF4D5AA004E8C01 /* Dosis-Bold.ttf in Resources */,
-				45954E161CF6725D00244AA4 /* WeighViewController.xib in Resources */,
+				45954E161CF6725D00244AA4 /* CountViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,7 +438,7 @@
 				45954DFB1CF4DA7700244AA4 /* QCButton.swift in Sources */,
 				45DE89BA1CF2B6C6001C821B /* Constants.swift in Sources */,
 				45954E021CF52A0B00244AA4 /* RootViewController.swift in Sources */,
-				45954E151CF6725D00244AA4 /* WeighViewController.swift in Sources */,
+				45954E151CF6725D00244AA4 /* CountViewController.swift in Sources */,
 				45954E251CF67A5200244AA4 /* ReportsViewController.swift in Sources */,
 				45954DFF1CF4DDF300244AA4 /* UIColor+QuickCount.swift in Sources */,
 				45954E201CF675F500244AA4 /* HomeViewController.swift in Sources */,

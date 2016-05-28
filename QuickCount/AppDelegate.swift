@@ -18,6 +18,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = RootViewController()
         window?.makeKeyAndVisible()
         UIApplication.sharedApplication().setStatusBarStyle(UIStatusBarStyle.LightContent, animated: false)
+        
+        UINavigationBar.appearance().backgroundColor = UIColor.qcBlack()
+        UINavigationBar.appearance().barTintColor = UIColor.qcBlack()
+        UINavigationBar.appearance().translucent = false
+        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor.qcWhite(), NSFontAttributeName: UIFont.qcDosisBold(22)]
+        
+        UITabBar.appearance().barTintColor = UIColor.qcBlack()
+        UITabBar.appearance().backgroundColor = UIColor.qcBlack()
+        UITabBar.appearance().translucent = false
+        UITabBar.appearance().tintColor = UIColor.qcWhite()
         return true
     }
 
