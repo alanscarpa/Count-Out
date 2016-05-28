@@ -13,6 +13,11 @@ class HomeViewController: UIViewController {
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         title = "Home"
+        navigationItem.titleView = UIImageView(image: UIImage(named: "topBarLogo"))
+        tabBarItem = UITabBarItem(
+            title: title,
+            image: UIImage(named: "homeTab"),
+            tag: 0)
     }
     
     required init?(coder aDecoder: NSCoder) {

@@ -12,4 +12,8 @@ extension UIColor {
     class func qcWhite() -> UIColor {
         return UIColor(red: 254.0/255.0, green: 254.0/255.0, blue: 254.0/255.0, alpha: 1)
     }
+    
+    class func qcBlack() -> UIColor {
+        return UIColor(red: 28.0/255.0, green: 28.0/255.0, blue: 28.0/255.0, alpha: 1)
+    }
 }

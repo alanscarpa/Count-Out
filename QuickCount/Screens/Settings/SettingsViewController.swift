@@ -13,6 +13,11 @@ class SettingsViewController: UIViewController {
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         title = "Settings"
+        navigationItem.title = title?.uppercaseString
+        tabBarItem = UITabBarItem(
+            title: title,
+            image: UIImage(named: "settingsTab"),
+            tag: 3)
     }
     
     required init?(coder aDecoder: NSCoder) {

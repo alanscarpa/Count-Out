@@ -8,11 +8,16 @@
 
 import UIKit
 
-class WeighViewController: UIViewController {
+class CountViewController: UIViewController {
 
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
-        title = "Weigh"
+        title = "Count"
+        navigationItem.title = title?.uppercaseString
+        tabBarItem = UITabBarItem(
+            title: title,
+            image: UIImage(named: "countTab"),
+            tag: 1)
     }
     
     required init?(coder aDecoder: NSCoder) {
