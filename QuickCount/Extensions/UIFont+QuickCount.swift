@@ -12,4 +12,8 @@ extension UIFont {
     class func qcDosisBold(size: CGFloat) -> UIFont {
         return UIFont(name: "Dosis-Bold", size: size)!
     }
+    
+    class func qcDosisLight(size: CGFloat) -> UIFont {
+        return UIFont(name: "Dosis-Light", size: size)!
+    }
 }

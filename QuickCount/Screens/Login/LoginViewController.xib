@@ -46,8 +46,8 @@
                     </state>
                     <variation key="default">
                         <mask key="constraints">
-                            <exclude reference="Q7H-6U-Aic"/>
                             <exclude reference="0Qk-hj-eEt"/>
+                            <exclude reference="Q7H-6U-Aic"/>
                         </mask>
                     </variation>
                     <connections>

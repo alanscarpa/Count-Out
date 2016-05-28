@@ -50,19 +50,12 @@ class LoginViewController: UIViewController, BluetoothManagerDelegate {
         self.view.insertSubview(blurEffectView, atIndex: 1)
     }
     
-    func setUpMainViewController() {
-        ip_addChildViewController(mainVC)
-        bottomConstraint = mainVC.view.autoPinEdge(.Bottom, toEdge: .Bottom, ofView: self.view, withOffset: -self.view.ip_height)
-        mainVC.view.autoAlignAxisToSuperviewAxis(.Vertical)
-        mainVC.view.autoSetDimensionsToSize(self.view.ip_frameSize)
-    }
-    
     // MARK: Actions
     
     @IBAction func logInButtonTapped(sender: AnyObject) {
         // TODO:  Only set up if login was successful
         setUpMainViewController()
-        self.view.layoutSubviews()
+        self.view.layoutIfNeeded()
         
         UIView.animateWithDuration(0.5, animations: {
             self.bottomConstraint.constant = 0
@@ -71,6 +64,13 @@ class LoginViewController: UIViewController, BluetoothManagerDelegate {
                self.clearLoginInformation()
                 // TODO: Stop video playback & resume on returning
         }
+    }
+    
+    func setUpMainViewController() {
+        ip_addChildViewController(mainVC)
+        bottomConstraint = mainVC.view.autoPinEdge(.Bottom, toEdge: .Bottom, ofView: self.view, withOffset: -self.view.ip_height)
+        mainVC.view.autoAlignAxisToSuperviewAxis(.Vertical)
+        mainVC.view.autoSetDimensionsToSize(self.view.ip_frameSize)
     }
     
     func clearLoginInformation() {
