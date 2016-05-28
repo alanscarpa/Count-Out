@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Dosis-Light.ttf">
+            <string>Dosis-Light</string>
+            <string>Dosis-Light</string>
+            <string>Dosis-Light</string>
+            <string>Dosis-Light</string>
+        </mutableArray>
+        <mutableArray key="Dosis-SemiBold.ttf">
+            <string>Dosis-SemiBold</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="266" id="KGk-i7-Jjw" customClass="HomeTableViewCell" customModule="QuickCount" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="432" height="266"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="432" height="265.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="madisonSquareGarden" translatesAutoresizingMaskIntoConstraints="NO" id="2c8-62-WUM" userLabel="Venue Image View">
+                        <rect key="frame" x="12" y="52" width="408" height="171"/>
+                    </imageView>
+                    <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ifl-lG-80o" userLabel="Overlay View">
+                        <rect key="frame" x="12" y="52" width="408" height="171"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="06/01/2016" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uq7-fY-31r" userLabel="Date Label" customClass="QCLabel" customModule="QuickCount" customModuleProvider="target">
+                        <rect key="frame" x="18" y="104.5" width="106.5" height="30.5"/>
+                        <fontDescription key="fontDescription" name="Dosis-Light" family="Dosis" pointSize="24"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CRIMSON RAT TAIL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vcg-vp-wgU" userLabel="Artist Label" customClass="QCLabel" customModule="QuickCount" customModuleProvider="target">
+                        <rect key="frame" x="130" y="104.5" width="283.5" height="30.5"/>
+                        <fontDescription key="fontDescription" name="Dosis-Light" family="Dosis" pointSize="24"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MADISON SQUARE GARDEN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ry6-Gv-igR" userLabel="Venue Label" customClass="QCLabel" customModule="QuickCount" customModuleProvider="target">
+                        <rect key="frame" x="18" y="140.5" width="396" height="30.5"/>
+                        <fontDescription key="fontDescription" name="Dosis-Light" family="Dosis" pointSize="24"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S7g-WI-78f" userLabel="Bottom Bar View">
+                        <rect key="frame" x="12" y="223" width="408" height="30"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="EDIT INVENTORY &gt;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qvN-QI-pXG" userLabel="Footer Label">
+                                <rect key="frame" x="285" y="4" width="111" height="20.5"/>
+                                <fontDescription key="fontDescription" name="Dosis-Light" family="Dosis" pointSize="16"/>
+                                <color key="textColor" red="0.99607843139999996" green="0.99607843139999996" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1097869947552681" green="0.10981365293264389" blue="0.10978532582521439" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="qvN-QI-pXG" firstAttribute="centerY" secondItem="S7g-WI-78f" secondAttribute="centerY" id="iCU-0M-2UF"/>
+                            <constraint firstItem="qvN-QI-pXG" firstAttribute="centerX" secondItem="S7g-WI-78f" secondAttribute="centerX" id="prq-2n-9rs"/>
+                            <constraint firstAttribute="trailing" secondItem="qvN-QI-pXG" secondAttribute="trailing" constant="12" id="uXu-lH-W9Y"/>
+                            <constraint firstAttribute="height" constant="30" id="w7L-qe-Kgg"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="prq-2n-9rs"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MSy-fv-1Lr" userLabel="Top Bar View">
+                        <rect key="frame" x="12" y="18" width="408" height="34"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="TODAY'S SHOW" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wyU-KJ-A7G" userLabel="Header Label">
+                                <rect key="frame" x="131" y="1" width="146" height="30.5"/>
+                                <fontDescription key="fontDescription" name="Dosis-SemiBold" family="Dosis" pointSize="24"/>
+                                <color key="textColor" red="0.99607843137254903" green="0.99607843137254903" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1097869947552681" green="0.10981365293264389" blue="0.1097852811217308" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="34" id="P7I-8N-hnZ"/>
+                            <constraint firstItem="wyU-KJ-A7G" firstAttribute="centerY" secondItem="MSy-fv-1Lr" secondAttribute="centerY" id="kl0-da-LLC"/>
+                            <constraint firstItem="wyU-KJ-A7G" firstAttribute="centerX" secondItem="MSy-fv-1Lr" secondAttribute="centerX" id="yX2-g0-b8w"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Ifl-lG-80o" firstAttribute="leading" secondItem="2c8-62-WUM" secondAttribute="leading" id="2NF-Ia-EXy"/>
+                    <constraint firstItem="ry6-Gv-igR" firstAttribute="top" secondItem="vcg-vp-wgU" secondAttribute="bottom" constant="6" id="5B8-5w-H70"/>
+                    <constraint firstItem="Ifl-lG-80o" firstAttribute="bottom" secondItem="2c8-62-WUM" secondAttribute="bottom" id="8kz-Fl-xx6"/>
+                    <constraint firstItem="ry6-Gv-igR" firstAttribute="trailing" secondItem="Ifl-lG-80o" secondAttribute="trailing" constant="-6" id="9sa-uC-SCh"/>
+                    <constraint firstItem="ry6-Gv-igR" firstAttribute="leading" secondItem="Ifl-lG-80o" secondAttribute="leading" constant="6" id="Hnp-5u-AyO"/>
+                    <constraint firstItem="MSy-fv-1Lr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="18" id="Hpn-jl-9yH"/>
+                    <constraint firstItem="S7g-WI-78f" firstAttribute="trailing" secondItem="2c8-62-WUM" secondAttribute="trailing" id="Hzj-U0-B8s"/>
+                    <constraint firstItem="vcg-vp-wgU" firstAttribute="trailing" secondItem="Ifl-lG-80o" secondAttribute="trailing" constant="-6" id="I82-vX-hg3"/>
+                    <constraint firstAttribute="trailing" secondItem="2c8-62-WUM" secondAttribute="trailing" constant="12" id="Jbt-3l-WPD"/>
+                    <constraint firstItem="uq7-fY-31r" firstAttribute="centerY" secondItem="Ifl-lG-80o" secondAttribute="centerY" constant="-18" id="OMg-3Y-gH7"/>
+                    <constraint firstItem="S7g-WI-78f" firstAttribute="leading" secondItem="2c8-62-WUM" secondAttribute="leading" id="PY6-s3-vaP"/>
+                    <constraint firstItem="Ifl-lG-80o" firstAttribute="trailing" secondItem="2c8-62-WUM" secondAttribute="trailing" id="SbT-Oa-ht2"/>
+                    <constraint firstItem="MSy-fv-1Lr" firstAttribute="leading" secondItem="2c8-62-WUM" secondAttribute="leading" id="aOS-ed-lDH"/>
+                    <constraint firstItem="MSy-fv-1Lr" firstAttribute="trailing" secondItem="2c8-62-WUM" secondAttribute="trailing" id="c7d-LR-kzg"/>
+                    <constraint firstItem="uq7-fY-31r" firstAttribute="leading" secondItem="Ifl-lG-80o" secondAttribute="leading" constant="6" id="ggF-hx-gtT"/>
+                    <constraint firstAttribute="bottom" secondItem="S7g-WI-78f" secondAttribute="bottom" constant="12" id="lSJ-Nb-ede"/>
+                    <constraint firstItem="2c8-62-WUM" firstAttribute="top" secondItem="MSy-fv-1Lr" secondAttribute="bottom" id="ocp-cY-s3D"/>
+                    <constraint firstItem="2c8-62-WUM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="tem-MX-4Qi"/>
+                    <constraint firstItem="vcg-vp-wgU" firstAttribute="centerY" secondItem="uq7-fY-31r" secondAttribute="centerY" id="ulW-Ca-6ef"/>
+                    <constraint firstItem="vcg-vp-wgU" firstAttribute="leading" secondItem="uq7-fY-31r" secondAttribute="trailing" constant="6" id="ybB-pB-ZiI"/>
+                    <constraint firstItem="Ifl-lG-80o" firstAttribute="top" secondItem="2c8-62-WUM" secondAttribute="top" id="yeG-f7-xbc"/>
+                    <constraint firstItem="S7g-WI-78f" firstAttribute="top" secondItem="2c8-62-WUM" secondAttribute="bottom" id="zOF-PJ-UgR"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="artistLabel" destination="vcg-vp-wgU" id="B4y-c1-hrm"/>
+                <outlet property="dateLabel" destination="uq7-fY-31r" id="1uS-Nb-Mth"/>
+                <outlet property="headerLabel" destination="wyU-KJ-A7G" id="QNm-mS-1c8"/>
+                <outlet property="venueImageView" destination="2c8-62-WUM" id="wbz-Vn-c7f"/>
+                <outlet property="venueLabel" destination="ry6-Gv-igR" id="ebv-Sc-Y2X"/>
+            </connections>
+            <point key="canvasLocation" x="334" y="354"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="madisonSquareGarden" width="400" height="266"/>
+    </resources>
+</document>
