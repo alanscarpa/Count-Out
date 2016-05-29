@@ -24,6 +24,14 @@
 		453889DB1CFB4C11008EF468 /* CountTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 453889D91CFB4C11008EF468 /* CountTableViewCell.xib */; };
 		453889DE1CFB5432008EF468 /* WeighViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453889DC1CFB5432008EF468 /* WeighViewController.swift */; };
 		453889DF1CFB5432008EF468 /* WeighViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 453889DD1CFB5432008EF468 /* WeighViewController.xib */; };
+		453889E61CFB5D39008EF468 /* SelectSizeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 453889E51CFB5D39008EF468 /* SelectSizeView.xib */; };
+		453889E81CFB5D53008EF468 /* WeighView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 453889E71CFB5D53008EF468 /* WeighView.xib */; };
+		453889EA1CFB5D6D008EF468 /* CountingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 453889E91CFB5D6D008EF468 /* CountingView.xib */; };
+		453889EC1CFB5D78008EF468 /* ResultsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 453889EB1CFB5D78008EF468 /* ResultsView.xib */; };
+		453889EE1CFB5E15008EF468 /* SelectSizeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453889ED1CFB5E15008EF468 /* SelectSizeView.swift */; };
+		453889F01CFB5EEC008EF468 /* WeighView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453889EF1CFB5EEC008EF468 /* WeighView.swift */; };
+		453889F21CFB5EF2008EF468 /* CountingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453889F11CFB5EF2008EF468 /* CountingView.swift */; };
+		453889F41CFB5EF9008EF468 /* ResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453889F31CFB5EF9008EF468 /* ResultsView.swift */; };
 		45792BCE1CF4D161004E8C01 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45792BCC1CF4D161004E8C01 /* Launch Screen.storyboard */; };
 		45792BD71CF4D5AA004E8C01 /* Dosis-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 45792BD01CF4D5AA004E8C01 /* Dosis-Bold.ttf */; };
 		45792BD81CF4D5AA004E8C01 /* Dosis-Book.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 45792BD11CF4D5AA004E8C01 /* Dosis-Book.ttf */; };
@@ -76,6 +84,14 @@
 		453889D91CFB4C11008EF468 /* CountTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CountTableViewCell.xib; sourceTree = "<group>"; };
 		453889DC1CFB5432008EF468 /* WeighViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeighViewController.swift; sourceTree = "<group>"; };
 		453889DD1CFB5432008EF468 /* WeighViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WeighViewController.xib; sourceTree = "<group>"; };
+		453889E51CFB5D39008EF468 /* SelectSizeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectSizeView.xib; sourceTree = "<group>"; };
+		453889E71CFB5D53008EF468 /* WeighView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WeighView.xib; sourceTree = "<group>"; };
+		453889E91CFB5D6D008EF468 /* CountingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CountingView.xib; sourceTree = "<group>"; };
+		453889EB1CFB5D78008EF468 /* ResultsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ResultsView.xib; sourceTree = "<group>"; };
+		453889ED1CFB5E15008EF468 /* SelectSizeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectSizeView.swift; sourceTree = "<group>"; };
+		453889EF1CFB5EEC008EF468 /* WeighView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeighView.swift; sourceTree = "<group>"; };
+		453889F11CFB5EF2008EF468 /* CountingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountingView.swift; sourceTree = "<group>"; };
+		453889F31CFB5EF9008EF468 /* ResultsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsView.swift; sourceTree = "<group>"; };
 		45792BCD1CF4D161004E8C01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Launch Screen.storyboard"; sourceTree = "<group>"; };
 		45792BD01CF4D5AA004E8C01 /* Dosis-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Dosis-Bold.ttf"; sourceTree = "<group>"; };
 		45792BD11CF4D5AA004E8C01 /* Dosis-Book.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Dosis-Book.ttf"; sourceTree = "<group>"; };
@@ -181,6 +197,23 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		453889E41CFB5CF3008EF468 /* Weigh Process */ = {
+			isa = PBXGroup;
+			children = (
+				453889DC1CFB5432008EF468 /* WeighViewController.swift */,
+				453889DD1CFB5432008EF468 /* WeighViewController.xib */,
+				453889ED1CFB5E15008EF468 /* SelectSizeView.swift */,
+				453889E51CFB5D39008EF468 /* SelectSizeView.xib */,
+				453889EF1CFB5EEC008EF468 /* WeighView.swift */,
+				453889E71CFB5D53008EF468 /* WeighView.xib */,
+				453889F11CFB5EF2008EF468 /* CountingView.swift */,
+				453889E91CFB5D6D008EF468 /* CountingView.xib */,
+				453889F31CFB5EF9008EF468 /* ResultsView.swift */,
+				453889EB1CFB5D78008EF468 /* ResultsView.xib */,
+			);
+			path = "Weigh Process";
+			sourceTree = "<group>";
+		};
 		45792BCF1CF4D595004E8C01 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -225,14 +258,13 @@
 		45954E121CF6712C00244AA4 /* Count */ = {
 			isa = PBXGroup;
 			children = (
+				453889E41CFB5CF3008EF468 /* Weigh Process */,
 				45954E131CF6725D00244AA4 /* CountViewController.swift */,
 				45954E141CF6725D00244AA4 /* CountViewController.xib */,
 				453889D41CFB476A008EF468 /* CountHeaderFooterView.swift */,
 				453889D61CFB47AA008EF468 /* CountHeaderFooterView.xib */,
 				453889D81CFB4C11008EF468 /* CountTableViewCell.swift */,
 				453889D91CFB4C11008EF468 /* CountTableViewCell.xib */,
-				453889DC1CFB5432008EF468 /* WeighViewController.swift */,
-				453889DD1CFB5432008EF468 /* WeighViewController.xib */,
 			);
 			path = Count;
 			sourceTree = "<group>";
@@ -400,9 +432,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				453889D71CFB47AA008EF468 /* CountHeaderFooterView.xib in Resources */,
+				453889E61CFB5D39008EF468 /* SelectSizeView.xib in Resources */,
 				4533B4F41CE8D78400E85B65 /* Assets.xcassets in Resources */,
 				45954E1C1CF674E100244AA4 /* MainViewController.xib in Resources */,
 				45954E261CF67A5200244AA4 /* ReportsViewController.xib in Resources */,
+				453889EC1CFB5D78008EF468 /* ResultsView.xib in Resources */,
 				453889DB1CFB4C11008EF468 /* CountTableViewCell.xib in Resources */,
 				45792BDB1CF4D5AA004E8C01 /* Dosis-Light.ttf in Resources */,
 				45792BDD1CF4D5AA004E8C01 /* Dosis-SemiBold.ttf in Resources */,
@@ -412,7 +446,9 @@
 				45792BDA1CF4D5AA004E8C01 /* Dosis-ExtraLight.ttf in Resources */,
 				45792BCE1CF4D161004E8C01 /* Launch Screen.storyboard in Resources */,
 				45792BDC1CF4D5AA004E8C01 /* Dosis-Medium.ttf in Resources */,
+				453889EA1CFB5D6D008EF468 /* CountingView.xib in Resources */,
 				45954E041CF52C4300244AA4 /* LoginViewController.xib in Resources */,
+				453889E81CFB5D53008EF468 /* WeighView.xib in Resources */,
 				453889CE1CFA3FF3008EF468 /* HomeTableViewCell.xib in Resources */,
 				45954E2B1CF67A6C00244AA4 /* SettingsViewController.xib in Resources */,
 				45792BD91CF4D5AA004E8C01 /* Dosis-ExtraBold.ttf in Resources */,
@@ -489,6 +525,7 @@
 				453889DE1CFB5432008EF468 /* WeighViewController.swift in Sources */,
 				45954E201CF675F500244AA4 /* HomeViewController.swift in Sources */,
 				45DE89C11CF2D7BE001C821B /* UIAlertController+Counted.swift in Sources */,
+				453889F01CFB5EEC008EF468 /* WeighView.swift in Sources */,
 				4533B5001CE8DE0700E85B65 /* BTDiscovery.swift in Sources */,
 				453889C71CF9D432008EF468 /* QCNavigationController.swift in Sources */,
 				45954E1B1CF674E100244AA4 /* MainViewController.swift in Sources */,
@@ -496,8 +533,11 @@
 				453889DA1CFB4C11008EF468 /* CountTableViewCell.swift in Sources */,
 				4533B5021CE8DE4C00E85B65 /* BTService.swift in Sources */,
 				45954E2A1CF67A6C00244AA4 /* SettingsViewController.swift in Sources */,
+				453889EE1CFB5E15008EF468 /* SelectSizeView.swift in Sources */,
 				453889D01CFA46DD008EF468 /* QCLabel.swift in Sources */,
 				45DE89BE1CF2C374001C821B /* BluetoothManager.swift in Sources */,
+				453889F21CFB5EF2008EF468 /* CountingView.swift in Sources */,
+				453889F41CFB5EF9008EF468 /* ResultsView.swift in Sources */,
 				453889CA1CF9D467008EF468 /* QCNavigationBar.swift in Sources */,
 				4533B4EF1CE8D78400E85B65 /* LoginViewController.swift in Sources */,
 				45DE89BC1CF2BAE5001C821B /* Errors.swift in Sources */,
