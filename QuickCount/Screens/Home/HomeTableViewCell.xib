@@ -32,19 +32,19 @@
                         <rect key="frame" x="12" y="52" width="408" height="171"/>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="06/01/2016" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uq7-fY-31r" userLabel="Date Label" customClass="QCLabel" customModule="QuickCount" customModuleProvider="target">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" misplaced="YES" text="06/01/2016" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uq7-fY-31r" userLabel="Date Label" customClass="QCLabel" customModule="QuickCount" customModuleProvider="target">
                         <rect key="frame" x="18" y="104.5" width="106.5" height="30.5"/>
                         <fontDescription key="fontDescription" name="Dosis-Light" family="Dosis" pointSize="24"/>
                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CRIMSON RAT TAIL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vcg-vp-wgU" userLabel="Artist Label" customClass="QCLabel" customModule="QuickCount" customModuleProvider="target">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="CRIMSON RAT TAIL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vcg-vp-wgU" userLabel="Artist Label" customClass="QCLabel" customModule="QuickCount" customModuleProvider="target">
                         <rect key="frame" x="130" y="104.5" width="283.5" height="30.5"/>
                         <fontDescription key="fontDescription" name="Dosis-Light" family="Dosis" pointSize="24"/>
                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MADISON SQUARE GARDEN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ry6-Gv-igR" userLabel="Venue Label" customClass="QCLabel" customModule="QuickCount" customModuleProvider="target">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="MADISON SQUARE GARDEN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ry6-Gv-igR" userLabel="Venue Label" customClass="QCLabel" customModule="QuickCount" customModuleProvider="target">
                         <rect key="frame" x="18" y="140.5" width="396" height="30.5"/>
                         <fontDescription key="fontDescription" name="Dosis-Light" family="Dosis" pointSize="24"/>
                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
@@ -53,7 +53,7 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S7g-WI-78f" userLabel="Bottom Bar View">
                         <rect key="frame" x="12" y="223" width="408" height="30"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="EDIT INVENTORY &gt;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qvN-QI-pXG" userLabel="Footer Label">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" misplaced="YES" text="EDIT INVENTORY &gt;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qvN-QI-pXG" userLabel="Footer Label">
                                 <rect key="frame" x="285" y="4" width="111" height="20.5"/>
                                 <fontDescription key="fontDescription" name="Dosis-Light" family="Dosis" pointSize="16"/>
                                 <color key="textColor" red="0.99607843139999996" green="0.99607843139999996" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
@@ -76,7 +76,7 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MSy-fv-1Lr" userLabel="Top Bar View">
                         <rect key="frame" x="12" y="18" width="408" height="34"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="TODAY'S SHOW" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wyU-KJ-A7G" userLabel="Header Label">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" misplaced="YES" text="TODAY'S SHOW" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wyU-KJ-A7G" userLabel="Header Label">
                                 <rect key="frame" x="131" y="1" width="146" height="30.5"/>
                                 <fontDescription key="fontDescription" name="Dosis-SemiBold" family="Dosis" pointSize="24"/>
                                 <color key="textColor" red="0.99607843137254903" green="0.99607843137254903" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>

@@ -7,9 +7,13 @@
 //
 
 import UIKit
+import CoreBluetooth
 
-class CountViewController: UIViewController {
+class CountViewController: UIViewController, BluetoothManagerDelegate {
 
+    @IBOutlet weak var tableView: UITableView!
+    let bluetoothManager = BluetoothManager.sharedInstance
+    var items = [Item]()
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         title = "Count"
@@ -26,7 +30,78 @@ class CountViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        tableView.registerNib(UINib(nibName: CountHeaderFooterView.ip_nibName, bundle: nil), forHeaderFooterViewReuseIdentifier: CountHeaderFooterView.ip_nibName)
+        
+        items = [
+            Item(name: "Black FOB Skull Shirt", sizes: ["S", "M", "L", "XL", "XXL"]),
+            Item(name: "Red Crossbones Hoodie", sizes: ["S", "M", "L", "XL", "XXL"]),
+            Item(name: "Ladies Blue Tank Top", sizes: ["S", "M", "L", "XL", "XXL"]),
+            Item(name: "Tour Tee", sizes: ["S", "M", "L", "XL", "XXL"]),
+            Item(name: "High Flying Eagle Shirt", sizes: ["S", "M", "L", "XL", "XXL"]),
+            Item(name: "American Flag Hoodie", sizes: ["S", "M", "L", "XL", "XXL"])
+        ]
+        setUpBluetooth()
+    }
+    
+    func setUpBluetooth() {
+        bluetoothManager.delegate = self
+        bluetoothManager.prepareToConnectToScale()
+    }
+    
+    // MARK: UITableViewDataSource
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return items.count
+    }
+    
+    func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView?  {
+        let headerFooterView = tableView.dequeueReusableHeaderFooterViewWithIdentifier(CountHeaderFooterView.ip_nibName) as! CountHeaderFooterView
+        return headerFooterView
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = UITableViewCell()
+        cell.textLabel?.text = items[indexPath.row].name
+        cell.textLabel?.font = UIFont.qcDosisBold(16)
+        return cell
+    }
+    
+    // MARK: BluetoothManagerDelegate
+    
+    func gettingWeightReading() {
+        print("Connected to scale & getting weight reading!")
+    }
+    
+    func receivedWeightReading(weight: String) {
+        // TODO: Only get 1 weight reading
+        print(weight)
+    }
+    
+    func receivedBluetoothError(error: NSError) {
+        if let errorMessage = error.userInfo[NSLocalizedDescriptionKey] as? String {
+            NSOperationQueue.mainQueue().addOperationWithBlock({
+                self.presentViewController(UIAlertController.bluetoothErrorWithMessage(errorMessage), animated: true, completion: nil)
+            })
+        }
+    }
+    
+    func receivedUserBluetoothError(errorState: CBCentralManagerState) {
+        // TODO: Maybe show a modal, preventing user from attempting to use scale until Bluetooth is enabled
+        switch errorState {
+        case .PoweredOff:
+            break
+        case .Unsupported:
+            break
+        case .Unauthorized:
+            break
+        default:
+            break
+        }
+    }
+    
+    func userEnabledBluetooth() {
+        // TODO: Dismiss modal instructing user to turn on bluetooth if it exists?
     }
 
 }

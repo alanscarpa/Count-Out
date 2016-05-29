@@ -30,7 +30,7 @@ class BTDiscovery: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate {
     }
     weak var delegate: BTDiscoveryDelegate?
     
-    func connectToScale() {
+    func prepareToConnectToScale() {
         let centralQueue = dispatch_queue_create("com.counted", DISPATCH_QUEUE_SERIAL)
         centralManager = CBCentralManager(delegate: self, queue: centralQueue)
     }

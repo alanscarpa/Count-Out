@@ -7,6 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CountViewController" customModule="QuickCount" customModuleProvider="target">
             <connections>
+                <outlet property="tableView" destination="PwB-eI-qZr" id="LH7-rY-258"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -14,7 +15,23 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="50" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="PwB-eI-qZr">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="xKg-7u-bi2"/>
+                        <outlet property="delegate" destination="-1" id="0An-jK-DvI"/>
+                    </connections>
+                </tableView>
+            </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="PwB-eI-qZr" secondAttribute="bottom" id="M9u-Xk-GUx"/>
+                <constraint firstAttribute="trailing" secondItem="PwB-eI-qZr" secondAttribute="trailing" id="Npo-Wp-mmh"/>
+                <constraint firstItem="PwB-eI-qZr" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ep1-Gy-qog"/>
+                <constraint firstItem="PwB-eI-qZr" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="exQ-ps-x3k"/>
+            </constraints>
         </view>
     </objects>
 </document>

@@ -17,6 +17,9 @@
 		453889CD1CFA3FF3008EF468 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453889CB1CFA3FF3008EF468 /* HomeTableViewCell.swift */; };
 		453889CE1CFA3FF3008EF468 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 453889CC1CFA3FF3008EF468 /* HomeTableViewCell.xib */; };
 		453889D01CFA46DD008EF468 /* QCLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453889CF1CFA46DD008EF468 /* QCLabel.swift */; };
+		453889D31CFB447C008EF468 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453889D21CFB447C008EF468 /* Item.swift */; };
+		453889D51CFB476A008EF468 /* CountHeaderFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453889D41CFB476A008EF468 /* CountHeaderFooterView.swift */; };
+		453889D71CFB47AA008EF468 /* CountHeaderFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 453889D61CFB47AA008EF468 /* CountHeaderFooterView.xib */; };
 		45792BCE1CF4D161004E8C01 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45792BCC1CF4D161004E8C01 /* Launch Screen.storyboard */; };
 		45792BD71CF4D5AA004E8C01 /* Dosis-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 45792BD01CF4D5AA004E8C01 /* Dosis-Bold.ttf */; };
 		45792BD81CF4D5AA004E8C01 /* Dosis-Book.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 45792BD11CF4D5AA004E8C01 /* Dosis-Book.ttf */; };
@@ -62,6 +65,9 @@
 		453889CB1CFA3FF3008EF468 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		453889CC1CFA3FF3008EF468 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
 		453889CF1CFA46DD008EF468 /* QCLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QCLabel.swift; sourceTree = "<group>"; };
+		453889D21CFB447C008EF468 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		453889D41CFB476A008EF468 /* CountHeaderFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountHeaderFooterView.swift; sourceTree = "<group>"; };
+		453889D61CFB47AA008EF468 /* CountHeaderFooterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CountHeaderFooterView.xib; sourceTree = "<group>"; };
 		45792BCD1CF4D161004E8C01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Launch Screen.storyboard"; sourceTree = "<group>"; };
 		45792BD01CF4D5AA004E8C01 /* Dosis-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Dosis-Bold.ttf"; sourceTree = "<group>"; };
 		45792BD11CF4D5AA004E8C01 /* Dosis-Book.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Dosis-Book.ttf"; sourceTree = "<group>"; };
@@ -128,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				4533B4EC1CE8D78400E85B65 /* AppDelegate.swift */,
+				453889D11CFB4440008EF468 /* Models */,
 				453889C51CF9D3D3008EF468 /* Custom View Controllers */,
 				45954DF91CF4DA2900244AA4 /* Views */,
 				45DAB0641CF49CBE00A03223 /* Supporting Files */,
@@ -156,6 +163,14 @@
 				453889C61CF9D432008EF468 /* QCNavigationController.swift */,
 			);
 			path = "Custom View Controllers";
+			sourceTree = "<group>";
+		};
+		453889D11CFB4440008EF468 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				453889D21CFB447C008EF468 /* Item.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		45792BCF1CF4D595004E8C01 /* Fonts */ = {
@@ -204,6 +219,8 @@
 			children = (
 				45954E131CF6725D00244AA4 /* CountViewController.swift */,
 				45954E141CF6725D00244AA4 /* CountViewController.xib */,
+				453889D41CFB476A008EF468 /* CountHeaderFooterView.swift */,
+				453889D61CFB47AA008EF468 /* CountHeaderFooterView.xib */,
 			);
 			path = Count;
 			sourceTree = "<group>";
@@ -370,6 +387,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				453889D71CFB47AA008EF468 /* CountHeaderFooterView.xib in Resources */,
 				4533B4F41CE8D78400E85B65 /* Assets.xcassets in Resources */,
 				45954E1C1CF674E100244AA4 /* MainViewController.xib in Resources */,
 				45954E261CF67A5200244AA4 /* ReportsViewController.xib in Resources */,
@@ -445,12 +463,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				453889D51CFB476A008EF468 /* CountHeaderFooterView.swift in Sources */,
 				45954DFB1CF4DA7700244AA4 /* QCButton.swift in Sources */,
 				45DE89BA1CF2B6C6001C821B /* Constants.swift in Sources */,
 				45954E021CF52A0B00244AA4 /* RootViewController.swift in Sources */,
 				45954E151CF6725D00244AA4 /* CountViewController.swift in Sources */,
 				45954E251CF67A5200244AA4 /* ReportsViewController.swift in Sources */,
 				45954DFF1CF4DDF300244AA4 /* UIColor+QuickCount.swift in Sources */,
+				453889D31CFB447C008EF468 /* Item.swift in Sources */,
 				453889CD1CFA3FF3008EF468 /* HomeTableViewCell.swift in Sources */,
 				45954E201CF675F500244AA4 /* HomeViewController.swift in Sources */,
 				45DE89C11CF2D7BE001C821B /* UIAlertController+Counted.swift in Sources */,

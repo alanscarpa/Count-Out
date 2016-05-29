@@ -32,8 +32,8 @@ class BluetoothManager: NSObject, BTDiscoveryDelegate {
         NSNotificationCenter.defaultCenter().removeObserver(self)
     }
     
-    func connectToScale() {
-        btDiscoveryManager.connectToScale()
+    func prepareToConnectToScale() {
+        btDiscoveryManager.prepareToConnectToScale()
     }
     
     // MARK: Notifications
