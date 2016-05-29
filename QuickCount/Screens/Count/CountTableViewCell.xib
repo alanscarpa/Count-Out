@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Dosis-Bold.ttf">
+            <string>Dosis-Bold</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="84" id="KGk-i7-Jjw" customClass="CountTableViewCell" customModule="QuickCount" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="382" height="84"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="382" height="83.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="e2p-jE-eby">
+                        <rect key="frame" x="8" y="10" width="66" height="64"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="66" id="0Ao-4u-ZZ9"/>
+                            <constraint firstAttribute="height" constant="64" id="Y1U-XD-LXs"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name Of Item Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="reR-ku-cAP">
+                        <rect key="frame" x="82" y="29" width="284" height="25.5"/>
+                        <fontDescription key="fontDescription" name="Dosis-Bold" family="Dosis" pointSize="20"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="leading" secondItem="e2p-jE-eby" secondAttribute="leading" constant="-8" id="5hr-LG-6Nm"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="reR-ku-cAP" secondAttribute="trailing" constant="8" id="B2a-Qs-3hL"/>
+                    <constraint firstItem="e2p-jE-eby" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="LbI-7r-LOc"/>
+                    <constraint firstItem="reR-ku-cAP" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="jlY-oK-b4T"/>
+                    <constraint firstItem="reR-ku-cAP" firstAttribute="leading" secondItem="e2p-jE-eby" secondAttribute="trailing" constant="8" id="ocz-7V-D5l"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="itemImageView" destination="e2p-jE-eby" id="gvr-bl-OUM"/>
+                <outlet property="itemImageWidthConstraint" destination="0Ao-4u-ZZ9" id="Meq-nh-ew7"/>
+                <outlet property="itemNameLabel" destination="reR-ku-cAP" id="U4H-P0-DPa"/>
+                <outlet property="titleLabelLeadingConstraint" destination="ocz-7V-D5l" id="6ll-P0-djk"/>
+            </connections>
+            <point key="canvasLocation" x="309" y="362"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -32,14 +32,14 @@ class CountViewController: UIViewController, BluetoothManagerDelegate {
         super.viewDidLoad()
         
         tableView.registerNib(UINib(nibName: CountHeaderFooterView.ip_nibName, bundle: nil), forHeaderFooterViewReuseIdentifier: CountHeaderFooterView.ip_nibName)
-        
+        tableView.registerNib(UINib(nibName: CountTableViewCell.ip_nibName, bundle: nil), forCellReuseIdentifier: CountTableViewCell.ip_nibName)
         items = [
-            Item(name: "Black FOB Skull Shirt", sizes: ["S", "M", "L", "XL", "XXL"]),
-            Item(name: "Red Crossbones Hoodie", sizes: ["S", "M", "L", "XL", "XXL"]),
-            Item(name: "Ladies Blue Tank Top", sizes: ["S", "M", "L", "XL", "XXL"]),
-            Item(name: "Tour Tee", sizes: ["S", "M", "L", "XL", "XXL"]),
-            Item(name: "High Flying Eagle Shirt", sizes: ["S", "M", "L", "XL", "XXL"]),
-            Item(name: "American Flag Hoodie", sizes: ["S", "M", "L", "XL", "XXL"])
+            Item(name: "Black FOB Skull Shirt", sizes: ["S", "M", "L", "XL", "XXL"], image: UIImage(named: "itemImage1")),
+            Item(name: "Red Crossbones Hoodie", sizes: ["S", "M", "L", "XL", "XXL"], image: UIImage(named: "itemImage3")),
+            Item(name: "Ladies Blue Tank Top", sizes: ["S", "M", "L", "XL", "XXL"], image: UIImage(named: "itemImage4")),
+            Item(name: "Tour Tee", sizes: ["S", "M", "L", "XL", "XXL"], image: UIImage(named: "itemImage6")),
+            Item(name: "High Flying Eagle Shirt", sizes: ["S", "M", "L", "XL", "XXL"], image: UIImage(named: "itemImage2")),
+            Item(name: "American Flag Hoodie", sizes: ["S", "M", "L", "XL", "XXL"], image: UIImage(named: "itemImage5"))
         ]
         setUpBluetooth()
     }
@@ -61,10 +61,13 @@ class CountViewController: UIViewController, BluetoothManagerDelegate {
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
-        cell.textLabel?.text = items[indexPath.row].name
-        cell.textLabel?.font = UIFont.qcDosisBold(16)
+        let cell = tableView.dequeueReusableCellWithIdentifier(CountTableViewCell.ip_nibName) as! CountTableViewCell
+        cell.configureForItem(items[indexPath.row])
         return cell
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        navigationController?.pushViewController(WeighViewController.ip_fromNib(), animated: true)
     }
     
     // MARK: BluetoothManagerDelegate
