@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10116"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WeighViewController" customModule="QuickCount" customModuleProvider="target">
@@ -14,7 +14,19 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <color key="backgroundColor" red="1" green="0.7041598308" blue="0.28897869459999997" alpha="1" colorSpace="calibratedRGB"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kxu-uB-Mb0" userLabel="Weigh View">
+                    <rect key="frame" x="12" y="12" width="576" height="576"/>
+                    <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Kxu-uB-Mb0" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="12" id="FHp-hd-Rjx"/>
+                <constraint firstItem="Kxu-uB-Mb0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="12" id="LtM-M6-bp4"/>
+                <constraint firstAttribute="trailing" secondItem="Kxu-uB-Mb0" secondAttribute="trailing" constant="12" id="mmg-3D-Hqn"/>
+                <constraint firstAttribute="bottom" secondItem="Kxu-uB-Mb0" secondAttribute="bottom" constant="12" id="rul-a9-FVU"/>
+            </constraints>
         </view>
     </objects>
 </document>
