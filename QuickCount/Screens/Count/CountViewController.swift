@@ -7,12 +7,10 @@
 //
 
 import UIKit
-import CoreBluetooth
 
-class CountViewController: UIViewController, BluetoothManagerDelegate {
+class CountViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
-    let bluetoothManager = BluetoothManager.sharedInstance
     var items = [Item]()
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
@@ -41,12 +39,6 @@ class CountViewController: UIViewController, BluetoothManagerDelegate {
             Item(name: "High Flying Eagle Shirt", sizes: ["S", "M", "L", "XL", "XXL"], image: UIImage(named: "itemImage2")),
             Item(name: "American Flag Hoodie", sizes: ["S", "M", "L", "XL", "XXL"], image: UIImage(named: "itemImage5"))
         ]
-        setUpBluetooth()
-    }
-    
-    func setUpBluetooth() {
-        bluetoothManager.delegate = self
-        bluetoothManager.prepareToConnectToScale()
     }
     
     // MARK: UITableViewDataSource
@@ -68,43 +60,6 @@ class CountViewController: UIViewController, BluetoothManagerDelegate {
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         navigationController?.pushViewController(WeighViewController.ip_fromNib(), animated: true)
-    }
-    
-    // MARK: BluetoothManagerDelegate
-    
-    func gettingWeightReading() {
-        print("Connected to scale & getting weight reading!")
-    }
-    
-    func receivedWeightReading(weight: String) {
-        // TODO: Only get 1 weight reading
-        print(weight)
-    }
-    
-    func receivedBluetoothError(error: NSError) {
-        if let errorMessage = error.userInfo[NSLocalizedDescriptionKey] as? String {
-            NSOperationQueue.mainQueue().addOperationWithBlock({
-                self.presentViewController(UIAlertController.bluetoothErrorWithMessage(errorMessage), animated: true, completion: nil)
-            })
-        }
-    }
-    
-    func receivedUserBluetoothError(errorState: CBCentralManagerState) {
-        // TODO: Maybe show a modal, preventing user from attempting to use scale until Bluetooth is enabled
-        switch errorState {
-        case .PoweredOff:
-            break
-        case .Unsupported:
-            break
-        case .Unauthorized:
-            break
-        default:
-            break
-        }
-    }
-    
-    func userEnabledBluetooth() {
-        // TODO: Dismiss modal instructing user to turn on bluetooth if it exists?
     }
 
 }
