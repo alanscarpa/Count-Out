@@ -8,6 +8,6 @@
 
 import UIKit
 
-class SelectSizeView: UIView {
+class SelectSizeView: WeighProcessView {
     
 }

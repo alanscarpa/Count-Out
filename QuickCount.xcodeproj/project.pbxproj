@@ -32,6 +32,7 @@
 		453889F01CFB5EEC008EF468 /* WeighView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453889EF1CFB5EEC008EF468 /* WeighView.swift */; };
 		453889F21CFB5EF2008EF468 /* CountingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453889F11CFB5EF2008EF468 /* CountingView.swift */; };
 		453889F41CFB5EF9008EF468 /* ResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453889F31CFB5EF9008EF468 /* ResultsView.swift */; };
+		453889F61CFB63F1008EF468 /* WeighProcessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453889F51CFB63F1008EF468 /* WeighProcessView.swift */; };
 		45792BCE1CF4D161004E8C01 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45792BCC1CF4D161004E8C01 /* Launch Screen.storyboard */; };
 		45792BD71CF4D5AA004E8C01 /* Dosis-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 45792BD01CF4D5AA004E8C01 /* Dosis-Bold.ttf */; };
 		45792BD81CF4D5AA004E8C01 /* Dosis-Book.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 45792BD11CF4D5AA004E8C01 /* Dosis-Book.ttf */; };
@@ -92,6 +93,7 @@
 		453889EF1CFB5EEC008EF468 /* WeighView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeighView.swift; sourceTree = "<group>"; };
 		453889F11CFB5EF2008EF468 /* CountingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountingView.swift; sourceTree = "<group>"; };
 		453889F31CFB5EF9008EF468 /* ResultsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsView.swift; sourceTree = "<group>"; };
+		453889F51CFB63F1008EF468 /* WeighProcessView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeighProcessView.swift; sourceTree = "<group>"; };
 		45792BCD1CF4D161004E8C01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Launch Screen.storyboard"; sourceTree = "<group>"; };
 		45792BD01CF4D5AA004E8C01 /* Dosis-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Dosis-Bold.ttf"; sourceTree = "<group>"; };
 		45792BD11CF4D5AA004E8C01 /* Dosis-Book.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Dosis-Book.ttf"; sourceTree = "<group>"; };
@@ -202,6 +204,7 @@
 			children = (
 				453889DC1CFB5432008EF468 /* WeighViewController.swift */,
 				453889DD1CFB5432008EF468 /* WeighViewController.xib */,
+				453889F51CFB63F1008EF468 /* WeighProcessView.swift */,
 				453889ED1CFB5E15008EF468 /* SelectSizeView.swift */,
 				453889E51CFB5D39008EF468 /* SelectSizeView.xib */,
 				453889EF1CFB5EEC008EF468 /* WeighView.swift */,
@@ -518,6 +521,7 @@
 				45DE89BA1CF2B6C6001C821B /* Constants.swift in Sources */,
 				45954E021CF52A0B00244AA4 /* RootViewController.swift in Sources */,
 				45954E151CF6725D00244AA4 /* CountViewController.swift in Sources */,
+				453889F61CFB63F1008EF468 /* WeighProcessView.swift in Sources */,
 				45954E251CF67A5200244AA4 /* ReportsViewController.swift in Sources */,
 				45954DFF1CF4DDF300244AA4 /* UIColor+QuickCount.swift in Sources */,
 				453889D31CFB447C008EF468 /* Item.swift in Sources */,

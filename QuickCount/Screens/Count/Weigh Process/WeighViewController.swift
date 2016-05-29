@@ -10,18 +10,20 @@ import UIKit
 
 class WeighViewController: UIViewController {
 
-    @IBOutlet weak var weighViewContainer: UIView!
+    @IBOutlet weak var weighProcessView: WeighProcessView!
+
     let selectSizeView = SelectSizeView.ip_fromNib()
     let weighView = WeighView.ip_fromNib()
     let countingView = CountingView.ip_fromNib()
     let resultsView = ResultsView.ip_fromNib()
     
+    @IBAction func buttonTapped(sender: AnyObject) {
+        weighProcessView.currentView = weighView
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        weighViewContainer.addSubview(selectSizeView)
-        selectSizeView.autoPinEdgesToSuperviewEdges()
-        
+        weighProcessView.loadInitialView(selectSizeView)
     }
 
 }
