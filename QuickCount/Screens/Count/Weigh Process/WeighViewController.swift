@@ -11,6 +11,8 @@ import CoreBluetooth
 
 protocol WeighProcessDelegate: class {
     func selectSizeNextButtonTapped(sizeIndex: Int, inOut: Int)
+    func weighMoreButtonTapped()
+    func doneWithItemButtonTapped()
 }
 
 class WeighViewController: UIViewController, BluetoothManagerDelegate, WeighProcessDelegate {
@@ -31,12 +33,17 @@ class WeighViewController: UIViewController, BluetoothManagerDelegate, WeighProc
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setUpWeighProcessDelegates()
         setUpInitialView()
         setUpBluetooth()
     }
     
-    func setUpInitialView() {
+    func setUpWeighProcessDelegates() {
         selectSizeView.delegate = self
+        resultsView.delegate = self
+    }
+    
+    func setUpInitialView() {
         selectSizeView.configureForItem(item)
         weighProcessView.loadInitialView(selectSizeView)
     }
@@ -56,6 +63,15 @@ class WeighViewController: UIViewController, BluetoothManagerDelegate, WeighProc
         selectedSizeIndex = sizeIndex
         weighView.shirtsLabel.text = "Place \(item.sizes[sizeIndex].name) \(item.name)s On Scale"
         weighProcessView.currentView = weighView
+    }
+    
+    func weighMoreButtonTapped() {
+        // TODO: Remember size & count in/out
+        weighProcessView.currentView = selectSizeView
+    }
+    
+    func doneWithItemButtonTapped() {
+        self.navigationController?.popViewControllerAnimated(true)
     }
     
     // MARK: BluetoothManagerDelegate

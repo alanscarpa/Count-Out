@@ -23,7 +23,7 @@ class QCNextButton: UIButton {
     func setUp() {
         self.layer.cornerRadius = 6
         self.titleLabel?.font = UIFont.qcDosisBold(24)
-        self.setTitleColor(UIColor.qcGreen(), forState: .Normal)
+        self.setTitleColor(UIColor.qcWhite(), forState: .Normal)
         self.backgroundColor = UIColor.qcBlack()
     }
     

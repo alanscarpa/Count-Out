@@ -19,6 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.makeKeyAndVisible()
         UIApplication.sharedApplication().setStatusBarStyle(UIStatusBarStyle.LightContent, animated: false)
         
+        UINavigationBar.appearance().tintColor = UIColor.qcWhite()
         UINavigationBar.appearance().backgroundColor = UIColor.qcBlack()
         UINavigationBar.appearance().barTintColor = UIColor.qcBlack()
         UINavigationBar.appearance().translucent = false
@@ -28,6 +29,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UITabBar.appearance().backgroundColor = UIColor.qcBlack()
         UITabBar.appearance().translucent = false
         UITabBar.appearance().tintColor = UIColor.qcWhite()
+        
+        UIBarButtonItem.appearance().setTitleTextAttributes([NSFontAttributeName: UIFont.qcDosisBold(18)], forState: UIControlState.Normal)
         return true
     }
 

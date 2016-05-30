@@ -56,7 +56,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="EDIT INVENTORY &gt;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qvN-QI-pXG" userLabel="Footer Label">
                                 <rect key="frame" x="278.5" y="4" width="117.5" height="20.5"/>
                                 <fontDescription key="fontDescription" name="Dosis-SemiBold" family="Dosis" pointSize="16"/>
-                                <color key="textColor" red="0.11372549019607843" green="1" blue="0.32156862745098036" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.99607843137254903" green="0.99607843137254903" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -83,7 +83,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.1097869947552681" green="0.10981365293264389" blue="0.1097852811217308" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.10980392156862745" green="0.10980392156862745" blue="0.10980392156862745" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="34" id="P7I-8N-hnZ"/>
                             <constraint firstItem="wyU-KJ-A7G" firstAttribute="centerY" secondItem="MSy-fv-1Lr" secondAttribute="centerY" id="kl0-da-LLC"/>

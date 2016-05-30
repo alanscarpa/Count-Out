@@ -38,22 +38,24 @@
                         <segment title="XXL"/>
                         <segment title="XXL"/>
                     </segments>
+                    <color key="tintColor" red="0.1097869947552681" green="0.10981365293264389" blue="0.10978532582521439" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 </segmentedControl>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Count In/Out?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kdu-kE-dPw">
-                    <rect key="frame" x="235" y="284" width="129" height="31"/>
+                    <rect key="frame" x="235" y="122" width="129" height="31"/>
                     <fontDescription key="fontDescription" name="Dosis-Book" family="Dosis" pointSize="24"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="jMW-r1-RP3">
-                    <rect key="frame" x="262" y="327" width="75" height="29"/>
+                    <rect key="frame" x="262" y="165" width="75" height="29"/>
                     <segments>
                         <segment title="In"/>
                         <segment title="Out"/>
                     </segments>
+                    <color key="tintColor" red="0.1097869947552681" green="0.10981365293264389" blue="0.10978532582521439" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 </segmentedControl>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5aX-VD-9Wh" customClass="QCNextButton" customModule="QuickCount" customModuleProvider="target">
-                    <rect key="frame" x="230" y="395.5" width="140" height="43"/>
+                    <rect key="frame" x="230" y="233.5" width="140" height="43"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="140" id="VHU-Sw-WKk"/>
                     </constraints>
@@ -72,6 +74,7 @@
                 <constraint firstItem="5aX-VD-9Wh" firstAttribute="centerX" secondItem="jMW-r1-RP3" secondAttribute="centerX" id="9Tn-de-tNl"/>
                 <constraint firstItem="Kdu-kE-dPw" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="BQS-p3-rGy"/>
                 <constraint firstItem="JmX-vD-Gto" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Epd-sV-5dr"/>
+                <constraint firstItem="Kdu-kE-dPw" firstAttribute="top" secondItem="vUE-6t-IWe" secondAttribute="bottom" constant="40" id="KgU-72-o5R"/>
                 <constraint firstItem="jMW-r1-RP3" firstAttribute="top" secondItem="Kdu-kE-dPw" secondAttribute="bottom" constant="12" id="O21-ky-Y7C"/>
                 <constraint firstItem="JmX-vD-Gto" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="12" id="PAw-aA-QdM"/>
                 <constraint firstItem="5aX-VD-9Wh" firstAttribute="top" secondItem="jMW-r1-RP3" secondAttribute="bottom" constant="40" id="efJ-Up-eaD"/>
@@ -83,6 +86,7 @@
             <variation key="default">
                 <mask key="constraints">
                     <exclude reference="t66-X4-wt7"/>
+                    <exclude reference="0pS-dH-6Nr"/>
                     <exclude reference="yZA-5g-QeK"/>
                 </mask>
             </variation>
