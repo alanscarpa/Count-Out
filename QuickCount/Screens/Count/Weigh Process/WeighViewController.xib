@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10116"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WeighViewController" customModule="QuickCount" customModuleProvider="target">
@@ -20,22 +20,13 @@
                     <rect key="frame" x="12" y="12" width="576" height="576"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k47-kP-RyC">
-                    <rect key="frame" x="277" y="285" width="46" height="30"/>
-                    <state key="normal" title="Button"/>
-                    <connections>
-                        <action selector="buttonTapped:" destination="-1" eventType="touchUpInside" id="XIt-b6-Nfb"/>
-                    </connections>
-                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="Kxu-uB-Mb0" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="12" id="FHp-hd-Rjx"/>
                 <constraint firstItem="Kxu-uB-Mb0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="12" id="LtM-M6-bp4"/>
-                <constraint firstItem="k47-kP-RyC" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="OOc-q0-3oF"/>
                 <constraint firstAttribute="trailing" secondItem="Kxu-uB-Mb0" secondAttribute="trailing" constant="12" id="mmg-3D-Hqn"/>
                 <constraint firstAttribute="bottom" secondItem="Kxu-uB-Mb0" secondAttribute="bottom" constant="12" id="rul-a9-FVU"/>
-                <constraint firstItem="k47-kP-RyC" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="soc-pw-Pcp"/>
             </constraints>
         </view>
     </objects>

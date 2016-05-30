@@ -9,23 +9,29 @@
 import UIKit
 import CoreBluetooth
 
-class WeighViewController: UIViewController, BluetoothManagerDelegate {
+protocol WeighProcessDelegate: class {
+    func selectSizeNextButtonTapped(sizeIndex: Int, inOut: String)
+}
+
+class WeighViewController: UIViewController, BluetoothManagerDelegate, WeighProcessDelegate {
 
     @IBOutlet weak var weighProcessView: WeighProcessView!
-
+    var item = Item()
     let selectSizeView = SelectSizeView.ip_fromNib()
     let weighView = WeighView.ip_fromNib()
     let countingView = CountingView.ip_fromNib()
     let resultsView = ResultsView.ip_fromNib()
     
     let bluetoothManager = BluetoothManager.sharedInstance
-
-    @IBAction func buttonTapped(sender: AnyObject) {
-        weighProcessView.currentView = weighView
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        selectSizeView.delegate = self
+        selectSizeView.sizeSegmentedControl.removeAllSegments()
+        for (index, size) in item.sizes.enumerate() {
+            selectSizeView.sizeSegmentedControl.insertSegmentWithTitle(size, atIndex: index, animated: false)
+        }
+//        selectSizeView.sizeSegmentedControl = UISegmentedControl(items: item.sizes)
         weighProcessView.loadInitialView(selectSizeView)
         setUpBluetooth()
     }
@@ -33,6 +39,14 @@ class WeighViewController: UIViewController, BluetoothManagerDelegate {
     func setUpBluetooth() {
         bluetoothManager.delegate = self
         bluetoothManager.prepareToConnectToScale()
+    }
+    
+    // MARK: WeighProcessDelegate
+    
+    func selectSizeNextButtonTapped(sizeIndex: Int, inOut: String) {
+        // TODO: Check size and inOut before transitioning
+        weighView.shirtsLabel.text = "Place \(item.sizes[sizeIndex]) \(item.name)s On Scale"
+        weighProcessView.currentView = weighView
     }
     
     // MARK: BluetoothManagerDelegate

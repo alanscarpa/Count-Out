@@ -4,13 +4,92 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Dosis-Book.ttf">
+            <string>Dosis-Book</string>
+            <string>Dosis-Book</string>
+        </mutableArray>
+        <mutableArray key="Dosis-SemiBold.ttf">
+            <string>Dosis-SemiBold</string>
+        </mutableArray>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SelectSizeView" customModule="QuickCount" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <color key="backgroundColor" red="1" green="0.0" blue="0.17586349179999999" alpha="1" colorSpace="calibratedRGB"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Size" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JmX-vD-Gto">
+                    <rect key="frame" x="251" y="12" width="97.5" height="30.5"/>
+                    <fontDescription key="fontDescription" name="Dosis-Book" family="Dosis" pointSize="24"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="vUE-6t-IWe">
+                    <rect key="frame" x="12" y="54" width="576" height="29"/>
+                    <segments>
+                        <segment title="XXS"/>
+                        <segment title="XS"/>
+                        <segment title="S"/>
+                        <segment title="M"/>
+                        <segment title="L"/>
+                        <segment title="XL"/>
+                        <segment title="XXL"/>
+                        <segment title="XXL"/>
+                    </segments>
+                </segmentedControl>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Count In/Out?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kdu-kE-dPw">
+                    <rect key="frame" x="235" y="284" width="129" height="31"/>
+                    <fontDescription key="fontDescription" name="Dosis-Book" family="Dosis" pointSize="24"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="jMW-r1-RP3">
+                    <rect key="frame" x="262" y="327" width="75" height="29"/>
+                    <segments>
+                        <segment title="In"/>
+                        <segment title="Out"/>
+                    </segments>
+                </segmentedControl>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5aX-VD-9Wh" customClass="QCNextButton" customModule="QuickCount" customModuleProvider="target">
+                    <rect key="frame" x="230" y="395.5" width="140" height="43"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="140" id="VHU-Sw-WKk"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Dosis-SemiBold" family="Dosis" pointSize="24"/>
+                    <state key="normal" title="NEXT"/>
+                    <connections>
+                        <action selector="nextButtonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="pnC-68-fxj"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Kdu-kE-dPw" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="0pS-dH-6Nr"/>
+                <constraint firstItem="vUE-6t-IWe" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="12" id="3me-WE-HGn"/>
+                <constraint firstAttribute="trailing" secondItem="vUE-6t-IWe" secondAttribute="trailing" constant="12" id="6ak-pb-9iv"/>
+                <constraint firstItem="5aX-VD-9Wh" firstAttribute="centerX" secondItem="jMW-r1-RP3" secondAttribute="centerX" id="9Tn-de-tNl"/>
+                <constraint firstItem="Kdu-kE-dPw" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="BQS-p3-rGy"/>
+                <constraint firstItem="JmX-vD-Gto" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Epd-sV-5dr"/>
+                <constraint firstItem="jMW-r1-RP3" firstAttribute="top" secondItem="Kdu-kE-dPw" secondAttribute="bottom" constant="12" id="O21-ky-Y7C"/>
+                <constraint firstItem="JmX-vD-Gto" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="12" id="PAw-aA-QdM"/>
+                <constraint firstItem="5aX-VD-9Wh" firstAttribute="top" secondItem="jMW-r1-RP3" secondAttribute="bottom" constant="40" id="efJ-Up-eaD"/>
+                <constraint firstItem="vUE-6t-IWe" firstAttribute="top" secondItem="JmX-vD-Gto" secondAttribute="bottom" constant="12" id="kVZ-KT-BKd"/>
+                <constraint firstItem="vUE-6t-IWe" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="t66-X4-wt7"/>
+                <constraint firstItem="Kdu-kE-dPw" firstAttribute="top" secondItem="vUE-6t-IWe" secondAttribute="bottom" constant="75" id="yZA-5g-QeK"/>
+                <constraint firstItem="jMW-r1-RP3" firstAttribute="centerX" secondItem="Kdu-kE-dPw" secondAttribute="centerX" id="ym6-4E-lTT"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="t66-X4-wt7"/>
+                    <exclude reference="yZA-5g-QeK"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="inOutSegmentedControl" destination="jMW-r1-RP3" id="BKx-vB-RXH"/>
+                <outlet property="sizeSegmentedControl" destination="vUE-6t-IWe" id="KzY-Jt-T7k"/>
+            </connections>
         </view>
     </objects>
 </document>

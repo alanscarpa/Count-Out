@@ -10,4 +10,6 @@ import UIKit
 
 class WeighView: UIView {
 
+    @IBOutlet weak var shirtsLabel: UILabel!
+    
 }

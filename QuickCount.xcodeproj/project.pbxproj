@@ -33,6 +33,7 @@
 		453889F21CFB5EF2008EF468 /* CountingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453889F11CFB5EF2008EF468 /* CountingView.swift */; };
 		453889F41CFB5EF9008EF468 /* ResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453889F31CFB5EF9008EF468 /* ResultsView.swift */; };
 		453889F61CFB63F1008EF468 /* WeighProcessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453889F51CFB63F1008EF468 /* WeighProcessView.swift */; };
+		453889F81CFC7033008EF468 /* QCNextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453889F71CFC7033008EF468 /* QCNextButton.swift */; };
 		45792BCE1CF4D161004E8C01 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45792BCC1CF4D161004E8C01 /* Launch Screen.storyboard */; };
 		45792BD71CF4D5AA004E8C01 /* Dosis-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 45792BD01CF4D5AA004E8C01 /* Dosis-Bold.ttf */; };
 		45792BD81CF4D5AA004E8C01 /* Dosis-Book.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 45792BD11CF4D5AA004E8C01 /* Dosis-Book.ttf */; };
@@ -94,6 +95,7 @@
 		453889F11CFB5EF2008EF468 /* CountingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountingView.swift; sourceTree = "<group>"; };
 		453889F31CFB5EF9008EF468 /* ResultsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsView.swift; sourceTree = "<group>"; };
 		453889F51CFB63F1008EF468 /* WeighProcessView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeighProcessView.swift; sourceTree = "<group>"; };
+		453889F71CFC7033008EF468 /* QCNextButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QCNextButton.swift; sourceTree = "<group>"; };
 		45792BCD1CF4D161004E8C01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Launch Screen.storyboard"; sourceTree = "<group>"; };
 		45792BD01CF4D5AA004E8C01 /* Dosis-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Dosis-Bold.ttf"; sourceTree = "<group>"; };
 		45792BD11CF4D5AA004E8C01 /* Dosis-Book.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Dosis-Book.ttf"; sourceTree = "<group>"; };
@@ -235,6 +237,7 @@
 			isa = PBXGroup;
 			children = (
 				45954DFA1CF4DA7700244AA4 /* QCButton.swift */,
+				453889F71CFC7033008EF468 /* QCNextButton.swift */,
 				453889CF1CFA46DD008EF468 /* QCLabel.swift */,
 				453889C91CF9D467008EF468 /* QCNavigationBar.swift */,
 			);
@@ -543,6 +546,7 @@
 				453889F21CFB5EF2008EF468 /* CountingView.swift in Sources */,
 				453889F41CFB5EF9008EF468 /* ResultsView.swift in Sources */,
 				453889CA1CF9D467008EF468 /* QCNavigationBar.swift in Sources */,
+				453889F81CFC7033008EF468 /* QCNextButton.swift in Sources */,
 				4533B4EF1CE8D78400E85B65 /* LoginViewController.swift in Sources */,
 				45DE89BC1CF2BAE5001C821B /* Errors.swift in Sources */,
 				4533B4ED1CE8D78400E85B65 /* AppDelegate.swift in Sources */,

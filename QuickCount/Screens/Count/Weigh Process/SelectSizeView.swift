@@ -10,4 +10,17 @@ import UIKit
 
 class SelectSizeView: WeighProcessView {
     
+    @IBOutlet weak var sizeSegmentedControl: UISegmentedControl!
+    @IBOutlet weak var inOutSegmentedControl: UISegmentedControl!
+    weak var delegate: WeighProcessDelegate?
+    
+    @IBAction func nextButtonTapped(sender: AnyObject) {
+        var inOut = ""
+        if inOutSegmentedControl.selectedSegmentIndex == 0 {
+            inOut = "In"
+        } else {
+            inOut = "Out"
+        }
+        delegate?.selectSizeNextButtonTapped(sizeSegmentedControl.selectedSegmentIndex, inOut: inOut)
+    }
 }

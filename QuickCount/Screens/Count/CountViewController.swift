@@ -59,7 +59,9 @@ class CountViewController: UIViewController {
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        navigationController?.pushViewController(WeighViewController.ip_fromNib(), animated: true)
+        let weighVC = WeighViewController.ip_fromNib()
+        weighVC.item = items[indexPath.row]
+        navigationController?.pushViewController(weighVC, animated: true)
     }
 
 }
