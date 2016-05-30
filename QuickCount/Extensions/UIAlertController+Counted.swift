@@ -15,4 +15,11 @@ extension UIAlertController {
         alert.addAction(action)
         return alert
     }
+    
+    class func sizeAndWhichCountError() -> UIAlertController {
+        let alert = UIAlertController(title: "Missing Info", message: "Please select the size you are weighing and whether you are counting in or counting out.", preferredStyle: .Alert)
+        let action = UIAlertAction(title: "OK", style: .Cancel, handler: nil)
+        alert.addAction(action)
+        return alert
+    }
 }

@@ -10,7 +10,7 @@ import UIKit
 import CoreBluetooth
 
 protocol WeighProcessDelegate: class {
-    func selectSizeNextButtonTapped(sizeIndex: Int, inOut: String)
+    func selectSizeNextButtonTapped(sizeIndex: Int, inOut: Int)
 }
 
 class WeighViewController: UIViewController, BluetoothManagerDelegate, WeighProcessDelegate {
@@ -23,17 +23,22 @@ class WeighViewController: UIViewController, BluetoothManagerDelegate, WeighProc
     let resultsView = ResultsView.ip_fromNib()
     
     let bluetoothManager = BluetoothManager.sharedInstance
+    var weightReading: Double?
+    var hasReading: Bool {
+        return weightReading != nil
+    }
+    var selectedSizeIndex = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        selectSizeView.delegate = self
-        selectSizeView.sizeSegmentedControl.removeAllSegments()
-        for (index, size) in item.sizes.enumerate() {
-            selectSizeView.sizeSegmentedControl.insertSegmentWithTitle(size, atIndex: index, animated: false)
-        }
-//        selectSizeView.sizeSegmentedControl = UISegmentedControl(items: item.sizes)
-        weighProcessView.loadInitialView(selectSizeView)
+        setUpInitialView()
         setUpBluetooth()
+    }
+    
+    func setUpInitialView() {
+        selectSizeView.delegate = self
+        selectSizeView.configureForItem(item)
+        weighProcessView.loadInitialView(selectSizeView)
     }
     
     func setUpBluetooth() {
@@ -43,21 +48,30 @@ class WeighViewController: UIViewController, BluetoothManagerDelegate, WeighProc
     
     // MARK: WeighProcessDelegate
     
-    func selectSizeNextButtonTapped(sizeIndex: Int, inOut: String) {
-        // TODO: Check size and inOut before transitioning
-        weighView.shirtsLabel.text = "Place \(item.sizes[sizeIndex]) \(item.name)s On Scale"
+    func selectSizeNextButtonTapped(sizeIndex: Int, inOut: Int) {
+        guard sizeIndex > -1 && inOut > -1  else {
+            self.presentViewController(UIAlertController.sizeAndWhichCountError(), animated: true, completion: nil)
+            return
+        }
+        selectedSizeIndex = sizeIndex
+        weighView.shirtsLabel.text = "Place \(item.sizes[sizeIndex].name) \(item.name)s On Scale"
         weighProcessView.currentView = weighView
     }
     
     // MARK: BluetoothManagerDelegate
     
     func gettingWeightReading() {
+        weighProcessView.currentView = countingView
         print("Connected to scale & getting weight reading!")
     }
     
-    func receivedWeightReading(weight: String) {
-        // TODO: Only get 1 weight reading
-        print(weight)
+    func receivedWeightReadingInOunces(weight: Double) {
+        if !hasReading {
+            print("Weight reading: \(weight)")
+            weightReading = weight
+            resultsView.configureForWeight(weight, item: item, andSize: item.sizes[selectedSizeIndex])
+            weighProcessView.currentView = resultsView
+        }
     }
     
     func receivedBluetoothError(error: NSError) {

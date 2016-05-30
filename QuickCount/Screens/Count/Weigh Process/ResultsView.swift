@@ -9,5 +9,13 @@
 import UIKit
 
 class ResultsView: UIView {
-
+    
+    @IBOutlet private weak var countLabel: UILabel!
+    @IBOutlet private weak var nameLabel: UILabel!
+        
+    func configureForWeight(weight: Double, item: Item, andSize size: Size) {
+        countLabel.text = "\(Int(weight / size.weightInOunces))"
+        nameLabel.text = "\(size.name) \(item.name)s"
+    }
+    
 }

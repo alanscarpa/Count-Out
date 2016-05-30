@@ -15,12 +15,13 @@ class SelectSizeView: WeighProcessView {
     weak var delegate: WeighProcessDelegate?
     
     @IBAction func nextButtonTapped(sender: AnyObject) {
-        var inOut = ""
-        if inOutSegmentedControl.selectedSegmentIndex == 0 {
-            inOut = "In"
-        } else {
-            inOut = "Out"
+        delegate?.selectSizeNextButtonTapped(sizeSegmentedControl.selectedSegmentIndex, inOut: inOutSegmentedControl.selectedSegmentIndex)
+    }
+    
+    func configureForItem(item: Item) {
+        sizeSegmentedControl.removeAllSegments()
+        for (index, size) in item.sizes.enumerate() {
+            sizeSegmentedControl.insertSegmentWithTitle(size.name, atIndex: index, animated: false)
         }
-        delegate?.selectSizeNextButtonTapped(sizeSegmentedControl.selectedSegmentIndex, inOut: inOut)
     }
 }

@@ -12,10 +12,10 @@ import UIKit
 class Item {
     
     var name = ""
-    var sizes = [String]()
+    var sizes = [Size]()
     var image: UIImage?
     
-    convenience init(name: String, sizes: [String], image: UIImage?) {
+    convenience init(name: String, sizes: [Size], image: UIImage?) {
         self.init()
         self.name = name
         self.sizes = sizes

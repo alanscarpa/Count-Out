@@ -4,13 +4,63 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Dosis-Bold.ttf">
+            <string>Dosis-Bold</string>
+        </mutableArray>
+        <mutableArray key="Dosis-Book.ttf">
+            <string>Dosis-Book</string>
+            <string>Dosis-Book</string>
+        </mutableArray>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ResultsView" customModule="QuickCount" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RESULTS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ils-Mq-GWe">
+                    <rect key="frame" x="259" y="12" width="82.5" height="30.5"/>
+                    <fontDescription key="fontDescription" name="Dosis-Book" family="Dosis" pointSize="24"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="54" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zgw-tI-fz3" userLabel="Count Label">
+                    <rect key="frame" x="267" y="229" width="65" height="81"/>
+                    <fontDescription key="fontDescription" name="Dosis-Bold" family="Dosis" pointSize="64"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name Of Items" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WJt-cn-SFm" userLabel="Name Label">
+                    <rect key="frame" x="232" y="310" width="135.5" height="30.5"/>
+                    <fontDescription key="fontDescription" name="Dosis-Book" family="Dosis" pointSize="24"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eMe-Fn-rzh" customClass="QCNextButton" customModule="QuickCount" customModuleProvider="target">
+                    <rect key="frame" x="212" y="358" width="176" height="30"/>
+                    <state key="normal" title="Weigh More Of The Same"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t9q-m4-ss1" customClass="QCNextButton" customModule="QuickCount" customModuleProvider="target">
+                    <rect key="frame" x="212" y="414" width="176" height="30"/>
+                    <state key="normal" title="Done With Item"/>
+                </button>
+            </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="WJt-cn-SFm" firstAttribute="top" secondItem="zgw-tI-fz3" secondAttribute="bottom" id="FfP-vd-TnH"/>
+                <constraint firstItem="WJt-cn-SFm" firstAttribute="centerX" secondItem="zgw-tI-fz3" secondAttribute="centerX" id="IrM-yo-Ij3"/>
+                <constraint firstItem="zgw-tI-fz3" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="-30" id="KgC-ig-1mx"/>
+                <constraint firstItem="Ils-Mq-GWe" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Lk0-UV-EYH"/>
+                <constraint firstItem="Ils-Mq-GWe" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="12" id="W3W-4X-7cJ"/>
+                <constraint firstItem="zgw-tI-fz3" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="ssT-24-I4O"/>
+            </constraints>
+            <connections>
+                <outlet property="countLabel" destination="zgw-tI-fz3" id="Vxy-Sj-1MC"/>
+                <outlet property="nameLabel" destination="WJt-cn-SFm" id="DGM-vL-l5P"/>
+            </connections>
+            <point key="canvasLocation" x="390" y="306"/>
         </view>
     </objects>
 </document>

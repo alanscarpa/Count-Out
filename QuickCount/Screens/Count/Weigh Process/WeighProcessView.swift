@@ -11,6 +11,8 @@ import UIKit
 class WeighProcessView: UIView {
 
     private var previousView: UIView?
+    private var kAnimationTime = 0.6
+    
     var currentView = UIView() {
         didSet {
             if previousView == nil {
@@ -28,14 +30,14 @@ class WeighProcessView: UIView {
     }
     
     private func transitionToView(nextView: UIView) {
-        UIView.animateWithDuration(0.8, animations: {
+        UIView.animateWithDuration(kAnimationTime, animations: {
             self.previousView!.alpha = 0.1
         }) { (finished) in
             self.previousView!.removeFromSuperview()
             nextView.alpha = 0.1
             self.addSubview(nextView)
             nextView.autoPinEdgesToSuperviewEdges()
-            UIView.animateWithDuration(0.8, animations: {
+            UIView.animateWithDuration(self.kAnimationTime, animations: {
                 nextView.alpha = 1
             }) { (finished) in
                 self.previousView = nextView

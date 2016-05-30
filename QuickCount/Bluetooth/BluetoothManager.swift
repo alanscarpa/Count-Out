@@ -8,9 +8,10 @@
 
 import Foundation
 import CoreBluetooth
+import Intrepid
 
 protocol BluetoothManagerDelegate: class {
-    func receivedWeightReading(weight: String)
+    func receivedWeightReadingInOunces(weight: Double)
     func receivedBluetoothError(error: NSError)
     func userEnabledBluetooth()
     func receivedUserBluetoothError(errorState: CBCentralManagerState)
@@ -46,7 +47,7 @@ class BluetoothManager: NSObject, BTDiscoveryDelegate {
     func didReceiveWeightReading(notification: NSNotification) {
         NSOperationQueue.mainQueue().addOperationWithBlock {
             if let weight = notification.userInfo?["weight"] as? Double {
-                self.delegate?.receivedWeightReading(String(format:"%.2f", weight))
+                self.delegate?.receivedWeightReadingInOunces(weight * 16)
             }
         }
     }
@@ -62,15 +63,21 @@ class BluetoothManager: NSObject, BTDiscoveryDelegate {
     // MARK: BluetoothDiscoveryDelegate
     
     func didConnectToScale() {
-        delegate?.gettingWeightReading()
+        Main {
+            self.delegate?.gettingWeightReading()
+        }
     }
     
     func userEnabledBluetooth() {
-        delegate?.userEnabledBluetooth()
+        Main {
+            self.delegate?.userEnabledBluetooth()
+        }
     }
     
     func userBluetoothError(errorState: CBCentralManagerState) {
-        delegate?.receivedUserBluetoothError(errorState)
+        Main {
+            self.delegate?.receivedUserBluetoothError(errorState)
+        }
     }
 
 }
