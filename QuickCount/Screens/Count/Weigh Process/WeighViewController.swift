@@ -68,6 +68,7 @@ class WeighViewController: UIViewController, BluetoothManagerDelegate, WeighProc
     func weighMoreButtonTapped() {
         // TODO: Remember size & count in/out
         weighProcessView.currentView = selectSizeView
+        weightReading = nil
     }
     
     func doneWithItemButtonTapped() {
@@ -86,6 +87,7 @@ class WeighViewController: UIViewController, BluetoothManagerDelegate, WeighProc
             print("Weight reading: \(weight)")
             weightReading = weight
             resultsView.configureForWeight(weight, item: item, andSize: item.sizes[selectedSizeIndex])
+            bluetoothManager.disconnectFromScale()
             weighProcessView.currentView = resultsView
         }
     }
