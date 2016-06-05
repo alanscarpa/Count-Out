@@ -33,70 +33,70 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BeX-G6-jlZ">
-                        <rect key="frame" x="94" y="8" width="63.5" height="15.5"/>
+                        <rect key="frame" x="72" y="8" width="63.5" height="15.5"/>
                         <fontDescription key="fontDescription" name="Dosis-Light" family="Dosis" pointSize="12"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AxF-3J-8Zs">
-                        <rect key="frame" x="157" y="8" width="63.5" height="15.5"/>
+                        <rect key="frame" x="135" y="8" width="63.5" height="15.5"/>
                         <fontDescription key="fontDescription" name="Dosis-Light" family="Dosis" pointSize="12"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Out" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vng-cD-ssB">
-                        <rect key="frame" x="221" y="8" width="63.5" height="15.5"/>
+                        <rect key="frame" x="199" y="8" width="63.5" height="15.5"/>
                         <fontDescription key="fontDescription" name="Dosis-Light" family="Dosis" pointSize="12"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sold" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xf2-fX-Kj0">
-                        <rect key="frame" x="284" y="8" width="63" height="15.5"/>
+                        <rect key="frame" x="262" y="8" width="63" height="15.5"/>
                         <fontDescription key="fontDescription" name="Dosis-Light" family="Dosis" pointSize="12"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gross" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d1y-WL-FN6">
-                        <rect key="frame" x="347" y="8" width="63.5" height="15.5"/>
+                        <rect key="frame" x="325" y="8" width="63.5" height="15.5"/>
                         <fontDescription key="fontDescription" name="Dosis-Light" family="Dosis" pointSize="12"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="XXL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Iqv-YM-Q1S">
-                        <rect key="frame" x="12" y="23" width="64.5" height="30.5"/>
+                        <rect key="frame" x="12" y="28" width="60" height="30.5"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="64.5" id="1HZ-L2-gX7"/>
+                            <constraint firstAttribute="width" constant="60" id="1HZ-L2-gX7"/>
                         </constraints>
                         <fontDescription key="fontDescription" name="Dosis-SemiBold" family="Dosis" pointSize="24"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="uuQ-RK-nTN" userLabel="Price Label">
-                        <rect key="frame" x="94" y="28" width="63.5" height="20.5"/>
+                        <rect key="frame" x="72" y="33" width="63.5" height="20.5"/>
                         <fontDescription key="fontDescription" name="Dosis-SemiBold" family="Dosis" pointSize="16"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="tSX-69-FT4" userLabel="In Label">
-                        <rect key="frame" x="157" y="28" width="63.5" height="20.5"/>
+                        <rect key="frame" x="135" y="33" width="63.5" height="20.5"/>
                         <fontDescription key="fontDescription" name="Dosis-SemiBold" family="Dosis" pointSize="16"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Diy-b6-Bsr" userLabel="Out Label">
-                        <rect key="frame" x="221" y="28" width="63.5" height="20.5"/>
+                        <rect key="frame" x="199" y="33" width="63.5" height="20.5"/>
                         <fontDescription key="fontDescription" name="Dosis-SemiBold" family="Dosis" pointSize="16"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="95" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="DhL-aX-n62" userLabel="Sold Label">
-                        <rect key="frame" x="284" y="28" width="63.5" height="20.5"/>
+                        <rect key="frame" x="262" y="33" width="63.5" height="20.5"/>
                         <fontDescription key="fontDescription" name="Dosis-SemiBold" family="Dosis" pointSize="16"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$950" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="qCi-OG-jIk" userLabel="Gross Label">
-                        <rect key="frame" x="347" y="28" width="63.5" height="20.5"/>
+                        <rect key="frame" x="325" y="33" width="63.5" height="20.5"/>
                         <fontDescription key="fontDescription" name="Dosis-SemiBold" family="Dosis" pointSize="16"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
@@ -119,19 +119,20 @@
                     <constraint firstItem="Diy-b6-Bsr" firstAttribute="centerX" secondItem="Vng-cD-ssB" secondAttribute="centerX" id="RHn-xy-pqq"/>
                     <constraint firstItem="Xf2-fX-Kj0" firstAttribute="centerY" secondItem="Vng-cD-ssB" secondAttribute="centerY" id="S0W-Xb-o46"/>
                     <constraint firstItem="d1y-WL-FN6" firstAttribute="centerY" secondItem="Xf2-fX-Kj0" secondAttribute="centerY" id="WTT-st-Sfz"/>
-                    <constraint firstItem="BeX-G6-jlZ" firstAttribute="leading" secondItem="Iqv-YM-Q1S" secondAttribute="trailing" constant="18" id="Wvh-QY-e6j"/>
+                    <constraint firstItem="BeX-G6-jlZ" firstAttribute="leading" secondItem="Iqv-YM-Q1S" secondAttribute="trailing" id="Wvh-QY-e6j"/>
                     <constraint firstItem="tSX-69-FT4" firstAttribute="centerY" secondItem="uuQ-RK-nTN" secondAttribute="centerY" id="YYb-nN-A3k"/>
                     <constraint firstItem="uuQ-RK-nTN" firstAttribute="centerX" secondItem="BeX-G6-jlZ" secondAttribute="centerX" id="coR-O9-jZc"/>
                     <constraint firstItem="tSX-69-FT4" firstAttribute="width" secondItem="uuQ-RK-nTN" secondAttribute="width" id="fHq-GW-q6l"/>
                     <constraint firstItem="tSX-69-FT4" firstAttribute="centerX" secondItem="AxF-3J-8Zs" secondAttribute="centerX" id="hmC-pX-dRy"/>
                     <constraint firstItem="qCi-OG-jIk" firstAttribute="width" secondItem="uuQ-RK-nTN" secondAttribute="width" id="jD0-91-n4a"/>
+                    <constraint firstItem="uuQ-RK-nTN" firstAttribute="centerY" secondItem="Iqv-YM-Q1S" secondAttribute="centerY" id="jQg-9a-yAm"/>
                     <constraint firstItem="uuQ-RK-nTN" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="jfx-rk-D7f"/>
                     <constraint firstItem="qCi-OG-jIk" firstAttribute="centerX" secondItem="d1y-WL-FN6" secondAttribute="centerX" id="kH0-Gp-gzy"/>
                     <constraint firstItem="Vng-cD-ssB" firstAttribute="leading" secondItem="AxF-3J-8Zs" secondAttribute="trailing" id="mBo-Ik-xV8"/>
                     <constraint firstItem="DhL-aX-n62" firstAttribute="centerX" secondItem="Xf2-fX-Kj0" secondAttribute="centerX" id="mv8-wI-lO5"/>
                     <constraint firstItem="Xf2-fX-Kj0" firstAttribute="width" secondItem="BeX-G6-jlZ" secondAttribute="width" id="nbL-pJ-OcU"/>
                     <constraint firstItem="qCi-OG-jIk" firstAttribute="centerY" secondItem="uuQ-RK-nTN" secondAttribute="centerY" id="nl5-q0-1Yg"/>
-                    <constraint firstItem="Iqv-YM-Q1S" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="oUg-3w-xyw"/>
+                    <constraint firstItem="Iqv-YM-Q1S" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" constant="5" id="oUg-3w-xyw"/>
                     <constraint firstItem="DhL-aX-n62" firstAttribute="centerY" secondItem="uuQ-RK-nTN" secondAttribute="centerY" id="ogk-EJ-eaE"/>
                     <constraint firstItem="BeX-G6-jlZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="p0q-FQ-rgK"/>
                     <constraint firstItem="AxF-3J-8Zs" firstAttribute="leading" secondItem="BeX-G6-jlZ" secondAttribute="trailing" id="pge-HV-NqX"/>
@@ -139,6 +140,7 @@
                 </constraints>
                 <variation key="default">
                     <mask key="constraints">
+                        <exclude reference="jfx-rk-D7f"/>
                         <exclude reference="7bY-Zg-Khj"/>
                     </mask>
                 </variation>
