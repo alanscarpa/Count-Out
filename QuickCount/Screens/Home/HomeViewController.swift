@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ExternalAccessory
 
 class HomeViewController: UIViewController {
 
@@ -33,7 +34,7 @@ class HomeViewController: UIViewController {
             forCellReuseIdentifier: HomeTableViewCell.ip_nibName
         )
     }
-    
+
     // MARK: UITableViewDataSource
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

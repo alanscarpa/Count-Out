@@ -58,6 +58,8 @@
 		45954E261CF67A5200244AA4 /* ReportsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45954E241CF67A5200244AA4 /* ReportsViewController.xib */; };
 		45954E2A1CF67A6C00244AA4 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45954E281CF67A6C00244AA4 /* SettingsViewController.swift */; };
 		45954E2B1CF67A6C00244AA4 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45954E291CF67A6C00244AA4 /* SettingsViewController.xib */; };
+		45C5B17F1D048D010001B901 /* ReportsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C5B17D1D048D010001B901 /* ReportsTableViewCell.swift */; };
+		45C5B1801D048D010001B901 /* ReportsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45C5B17E1D048D010001B901 /* ReportsTableViewCell.xib */; };
 		45DAB0681CF4A0D300A03223 /* loginVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 45DAB0671CF4A0D300A03223 /* loginVideo.mp4 */; };
 		45DE89BA1CF2B6C6001C821B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DE89B91CF2B6C6001C821B /* Constants.swift */; };
 		45DE89BC1CF2BAE5001C821B /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DE89BB1CF2BAE5001C821B /* Errors.swift */; };
@@ -121,6 +123,8 @@
 		45954E241CF67A5200244AA4 /* ReportsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReportsViewController.xib; sourceTree = "<group>"; };
 		45954E281CF67A6C00244AA4 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		45954E291CF67A6C00244AA4 /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
+		45C5B17D1D048D010001B901 /* ReportsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportsTableViewCell.swift; sourceTree = "<group>"; };
+		45C5B17E1D048D010001B901 /* ReportsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReportsTableViewCell.xib; sourceTree = "<group>"; };
 		45DAB0671CF4A0D300A03223 /* loginVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = loginVideo.mp4; sourceTree = "<group>"; };
 		45DE89B91CF2B6C6001C821B /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		45DE89BB1CF2BAE5001C821B /* Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
@@ -294,6 +298,8 @@
 			children = (
 				45954E231CF67A5200244AA4 /* ReportsViewController.swift */,
 				45954E241CF67A5200244AA4 /* ReportsViewController.xib */,
+				45C5B17D1D048D010001B901 /* ReportsTableViewCell.swift */,
+				45C5B17E1D048D010001B901 /* ReportsTableViewCell.xib */,
 			);
 			path = Reports;
 			sourceTree = "<group>";
@@ -454,6 +460,7 @@
 				45954E211CF675F500244AA4 /* HomeViewController.xib in Resources */,
 				45792BDA1CF4D5AA004E8C01 /* Dosis-ExtraLight.ttf in Resources */,
 				45792BCE1CF4D161004E8C01 /* Launch Screen.storyboard in Resources */,
+				45C5B1801D048D010001B901 /* ReportsTableViewCell.xib in Resources */,
 				45792BDC1CF4D5AA004E8C01 /* Dosis-Medium.ttf in Resources */,
 				453889EA1CFB5D6D008EF468 /* CountingView.xib in Resources */,
 				45954E041CF52C4300244AA4 /* LoginViewController.xib in Resources */,
@@ -542,6 +549,7 @@
 				45954E1B1CF674E100244AA4 /* MainViewController.swift in Sources */,
 				45954DFD1CF4DAEE00244AA4 /* UIFont+QuickCount.swift in Sources */,
 				453889DA1CFB4C11008EF468 /* CountTableViewCell.swift in Sources */,
+				45C5B17F1D048D010001B901 /* ReportsTableViewCell.swift in Sources */,
 				4533B5021CE8DE4C00E85B65 /* BTService.swift in Sources */,
 				45954E2A1CF67A6C00244AA4 /* SettingsViewController.swift in Sources */,
 				453889EE1CFB5E15008EF468 /* SelectSizeView.swift in Sources */,
