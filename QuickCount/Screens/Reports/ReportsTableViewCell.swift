@@ -17,15 +17,12 @@ class ReportsTableViewCell: UITableViewCell {
     @IBOutlet weak var soldLabel: UILabel!
     @IBOutlet weak var grossLabel: UILabel!
     
-    func configureForSize(size: Size, ofItem item: Item) {
+    func configureForSize(size: Size) {
         sizeLabel.text = size.name
-        priceLabel.text = "$\(item.price)"
+        priceLabel.text = "$\(size.item.price.stringWithDecimalIfNeeded())"
         inLabel.text = "\(size.inCount)"
         outLabel.text = "\(size.outCount)"
-        // TODO: Set sold/gross somewhere
-        let randomSold = Int(arc4random_uniform(250) + 75)
-        soldLabel.text = "\(randomSold)"
-        let gross = randomSold * item.price
-        grossLabel.text = "$\(gross)"
+        soldLabel.text = "\(size.amountSold)"
+        grossLabel.text = "$\(size.grossAmount.stringWithDecimalIfNeeded())"
     }
 }

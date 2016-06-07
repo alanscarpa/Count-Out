@@ -11,8 +11,16 @@ import Foundation
 class Size {
     var name = ""
     var weightInOunces: Double = 0.0
-    var inCount = 0
-    var outCount = 0
+    // TODO: Connect this random stuff to real data
+    var inCount = Int(arc4random_uniform(250) + 75)
+    var outCount = Int(arc4random_uniform(50) + 25)
+    var amountSold: Int {
+        return inCount - outCount
+    }
+    var grossAmount: Double {
+        return Double(amountSold) * item.price
+    }
+    var item = Item()
     
     convenience init(name: String, weightInOunces: Double) {
         self.init()

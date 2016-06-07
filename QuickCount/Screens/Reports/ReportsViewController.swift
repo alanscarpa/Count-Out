@@ -59,13 +59,14 @@ class ReportsViewController: UIViewController {
     }
     
     func tableView(tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
-        let headerFooterView = tableView.dequeueReusableHeaderFooterViewWithIdentifier(ReportsFooterView.ip_nibName) as! ReportsFooterView
-        return headerFooterView
+        let footerView = tableView.dequeueReusableHeaderFooterViewWithIdentifier(ReportsFooterView.ip_nibName) as! ReportsFooterView
+        footerView.grossTotalLabel.text = "Gross Amount Sold: $\(items[section].grossAmountSold)"
+        return footerView
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier(ReportsTableViewCell.ip_nibName) as! ReportsTableViewCell
-        cell.configureForSize(items[indexPath.section].sizes[indexPath.row], ofItem: items[indexPath.section])
+        cell.configureForSize(items[indexPath.section].sizes[indexPath.row])
         return cell
     }
 
