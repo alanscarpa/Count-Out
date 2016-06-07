@@ -62,6 +62,9 @@
 		45C5B1801D048D010001B901 /* ReportsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45C5B17E1D048D010001B901 /* ReportsTableViewCell.xib */; };
 		45C5B1821D04B5930001B901 /* ReportsHeaderFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C5B1811D04B5930001B901 /* ReportsHeaderFooterView.swift */; };
 		45C5B1841D04B5A60001B901 /* ReportsHeaderFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45C5B1831D04B5A60001B901 /* ReportsHeaderFooterView.xib */; };
+		45C5B1861D04B79F0001B901 /* ReportsFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45C5B1851D04B79F0001B901 /* ReportsFooterView.xib */; };
+		45C5B1881D04B7B30001B901 /* ReportsFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C5B1871D04B7B30001B901 /* ReportsFooterView.swift */; };
+		45C5B18A1D0647450001B901 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C5B1891D0647450001B901 /* DataManager.swift */; };
 		45DAB0681CF4A0D300A03223 /* loginVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 45DAB0671CF4A0D300A03223 /* loginVideo.mp4 */; };
 		45DE89BA1CF2B6C6001C821B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DE89B91CF2B6C6001C821B /* Constants.swift */; };
 		45DE89BC1CF2BAE5001C821B /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DE89BB1CF2BAE5001C821B /* Errors.swift */; };
@@ -129,6 +132,9 @@
 		45C5B17E1D048D010001B901 /* ReportsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReportsTableViewCell.xib; sourceTree = "<group>"; };
 		45C5B1811D04B5930001B901 /* ReportsHeaderFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportsHeaderFooterView.swift; sourceTree = "<group>"; };
 		45C5B1831D04B5A60001B901 /* ReportsHeaderFooterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReportsHeaderFooterView.xib; sourceTree = "<group>"; };
+		45C5B1851D04B79F0001B901 /* ReportsFooterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReportsFooterView.xib; sourceTree = "<group>"; };
+		45C5B1871D04B7B30001B901 /* ReportsFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportsFooterView.swift; sourceTree = "<group>"; };
+		45C5B1891D0647450001B901 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		45DAB0671CF4A0D300A03223 /* loginVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = loginVideo.mp4; sourceTree = "<group>"; };
 		45DE89B91CF2B6C6001C821B /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		45DE89BB1CF2BAE5001C821B /* Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
@@ -175,12 +181,12 @@
 				453889D11CFB4440008EF468 /* Models */,
 				453889C51CF9D3D3008EF468 /* Custom View Controllers */,
 				45954DF91CF4DA2900244AA4 /* Views */,
-				45DAB0641CF49CBE00A03223 /* Supporting Files */,
 				45DE89BF1CF2D789001C821B /* Extension */,
 				45DE89B81CF2B69E001C821B /* Utilities */,
 				4533B4FE1CE8DDE900E85B65 /* Bluetooth */,
 				45DAB0691CF4A5B900A03223 /* Screens */,
 				4533B4F31CE8D78400E85B65 /* Assets.xcassets */,
+				45DAB0641CF49CBE00A03223 /* Supporting Files */,
 			);
 			path = QuickCount;
 			sourceTree = "<group>";
@@ -208,6 +214,7 @@
 			children = (
 				453889D21CFB447C008EF468 /* Item.swift */,
 				453889F91CFC9D1B008EF468 /* Size.swift */,
+				45C5B1891D0647450001B901 /* DataManager.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -306,6 +313,8 @@
 				45C5B17E1D048D010001B901 /* ReportsTableViewCell.xib */,
 				45C5B1811D04B5930001B901 /* ReportsHeaderFooterView.swift */,
 				45C5B1831D04B5A60001B901 /* ReportsHeaderFooterView.xib */,
+				45C5B1871D04B7B30001B901 /* ReportsFooterView.swift */,
+				45C5B1851D04B79F0001B901 /* ReportsFooterView.xib */,
 			);
 			path = Reports;
 			sourceTree = "<group>";
@@ -470,6 +479,7 @@
 				45C5B1801D048D010001B901 /* ReportsTableViewCell.xib in Resources */,
 				45792BDC1CF4D5AA004E8C01 /* Dosis-Medium.ttf in Resources */,
 				453889EA1CFB5D6D008EF468 /* CountingView.xib in Resources */,
+				45C5B1861D04B79F0001B901 /* ReportsFooterView.xib in Resources */,
 				45954E041CF52C4300244AA4 /* LoginViewController.xib in Resources */,
 				453889E81CFB5D53008EF468 /* WeighView.xib in Resources */,
 				453889CE1CFA3FF3008EF468 /* HomeTableViewCell.xib in Resources */,
@@ -556,10 +566,12 @@
 				45954E1B1CF674E100244AA4 /* MainViewController.swift in Sources */,
 				45C5B1821D04B5930001B901 /* ReportsHeaderFooterView.swift in Sources */,
 				45954DFD1CF4DAEE00244AA4 /* UIFont+QuickCount.swift in Sources */,
+				45C5B1881D04B7B30001B901 /* ReportsFooterView.swift in Sources */,
 				453889DA1CFB4C11008EF468 /* CountTableViewCell.swift in Sources */,
 				45C5B17F1D048D010001B901 /* ReportsTableViewCell.swift in Sources */,
 				4533B5021CE8DE4C00E85B65 /* BTService.swift in Sources */,
 				45954E2A1CF67A6C00244AA4 /* SettingsViewController.swift in Sources */,
+				45C5B18A1D0647450001B901 /* DataManager.swift in Sources */,
 				453889EE1CFB5E15008EF468 /* SelectSizeView.swift in Sources */,
 				453889D01CFA46DD008EF468 /* QCLabel.swift in Sources */,
 				45DE89BE1CF2C374001C821B /* BluetoothManager.swift in Sources */,

@@ -11,6 +11,7 @@ import UIKit
 class ReportsViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
+    let items = DataManager.sharedInstance.items
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
@@ -29,27 +30,42 @@ class ReportsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.registerNib(UINib(nibName: ReportsHeaderFooterView.ip_nibName, bundle: nil), forHeaderFooterViewReuseIdentifier: ReportsHeaderFooterView.ip_nibName)
+        tableView.registerNib(UINib(nibName: ReportsFooterView.ip_nibName, bundle: nil), forHeaderFooterViewReuseIdentifier: ReportsFooterView.ip_nibName)
         tableView.registerNib(UINib(nibName: ReportsTableViewCell.ip_nibName, bundle: nil), forCellReuseIdentifier: ReportsTableViewCell.ip_nibName)
+        
+
+        let sendReportButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Action, target: self, action: #selector(sendReportButtonTapped))
+        navigationItem.rightBarButtonItem = sendReportButton
+    }
+    
+    func sendReportButtonTapped() {
+        presentViewController(UIAlertController.dummyEmailSent(), animated: true, completion: nil)
     }
     
     // MARK: UITableViewDataSource
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 3
+        return items.count
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return items[section].sizes.count
     }
     
     func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView?  {
         let headerFooterView = tableView.dequeueReusableHeaderFooterViewWithIdentifier(ReportsHeaderFooterView.ip_nibName) as! ReportsHeaderFooterView
+        headerFooterView.itemNameLabel.text = items[section].name
+        return headerFooterView
+    }
+    
+    func tableView(tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        let headerFooterView = tableView.dequeueReusableHeaderFooterViewWithIdentifier(ReportsFooterView.ip_nibName) as! ReportsFooterView
         return headerFooterView
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier(ReportsTableViewCell.ip_nibName) as! ReportsTableViewCell
-//        cell.configureForItem(items[indexPath.row])
+        cell.configureForSize(items[indexPath.section].sizes[indexPath.row], ofItem: items[indexPath.section])
         return cell
     }
 

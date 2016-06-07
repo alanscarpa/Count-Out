@@ -11,6 +11,8 @@ import Foundation
 class Size {
     var name = ""
     var weightInOunces: Double = 0.0
+    var inCount = 0
+    var outCount = 0
     
     convenience init(name: String, weightInOunces: Double) {
         self.init()

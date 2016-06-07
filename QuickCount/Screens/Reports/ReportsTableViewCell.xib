@@ -145,6 +145,14 @@
                     </mask>
                 </variation>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="grossLabel" destination="qCi-OG-jIk" id="3cR-6U-lUQ"/>
+                <outlet property="inLabel" destination="tSX-69-FT4" id="dP3-J4-i5C"/>
+                <outlet property="outLabel" destination="Diy-b6-Bsr" id="kEh-zy-6z4"/>
+                <outlet property="priceLabel" destination="uuQ-RK-nTN" id="27J-mP-fDc"/>
+                <outlet property="sizeLabel" destination="Iqv-YM-Q1S" id="rOf-mU-zNQ"/>
+                <outlet property="soldLabel" destination="DhL-aX-n62" id="N0s-uq-dSP"/>
+            </connections>
             <point key="canvasLocation" x="293.5" y="212.5"/>
         </tableViewCell>
     </objects>

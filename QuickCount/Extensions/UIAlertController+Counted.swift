@@ -22,4 +22,11 @@ extension UIAlertController {
         alert.addAction(action)
         return alert
     }
+    
+    class func dummyEmailSent() -> UIAlertController {
+        let alert = UIAlertController(title: "Report Sent", message: "Your report has been sent to YourManager@gmail.com", preferredStyle: .Alert)
+        let action = UIAlertAction(title: "OK", style: .Cancel, handler: nil)
+        alert.addAction(action)
+        return alert
+    }
 }

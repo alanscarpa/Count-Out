@@ -14,6 +14,8 @@ class Item {
     var name = ""
     var sizes = [Size]()
     var image: UIImage?
+    // TODO: Update price
+    var price = 10
     
     convenience init(name: String, sizes: [Size], image: UIImage?) {
         self.init()

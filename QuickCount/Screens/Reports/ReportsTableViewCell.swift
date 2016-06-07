@@ -10,15 +10,22 @@ import UIKit
 
 class ReportsTableViewCell: UITableViewCell {
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
+    @IBOutlet weak var sizeLabel: UILabel!
+    @IBOutlet weak var priceLabel: UILabel!
+    @IBOutlet weak var inLabel: UILabel!
+    @IBOutlet weak var outLabel: UILabel!
+    @IBOutlet weak var soldLabel: UILabel!
+    @IBOutlet weak var grossLabel: UILabel!
     
+    func configureForSize(size: Size, ofItem item: Item) {
+        sizeLabel.text = size.name
+        priceLabel.text = "$\(item.price)"
+        inLabel.text = "\(size.inCount)"
+        outLabel.text = "\(size.outCount)"
+        // TODO: Set sold/gross somewhere
+        let randomSold = Int(arc4random_uniform(250) + 75)
+        soldLabel.text = "\(randomSold)"
+        let gross = randomSold * item.price
+        grossLabel.text = "$\(gross)"
+    }
 }
