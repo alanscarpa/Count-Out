@@ -46,26 +46,26 @@ class BTDiscovery: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate {
     
     func centralManagerDidUpdateState(central: CBCentralManager) {
         switch central.state {
-        case CBCentralManagerState.PoweredOff:
+        case .PoweredOff:
             delegate?.userBluetoothError(.PoweredOff)
             clearDevices()
             
-        case CBCentralManagerState.Unauthorized:
+        case .Unauthorized:
             delegate?.userBluetoothError(.Unauthorized)
             break
             
-        case CBCentralManagerState.Unknown:
+        case .Unknown:
             // Wait for another event
             break
             
-        case CBCentralManagerState.PoweredOn:
+        case .PoweredOn:
             delegate?.userEnabledBluetooth()
             startScanning()
             
-        case CBCentralManagerState.Resetting:
+        case .Resetting:
             clearDevices()
             
-        case CBCentralManagerState.Unsupported:
+        case .Unsupported:
             delegate?.userBluetoothError(.Unsupported)
             break
         }

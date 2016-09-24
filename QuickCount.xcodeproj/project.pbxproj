@@ -71,11 +71,12 @@
 		45DE89BC1CF2BAE5001C821B /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DE89BB1CF2BAE5001C821B /* Errors.swift */; };
 		45DE89BE1CF2C374001C821B /* BluetoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DE89BD1CF2C374001C821B /* BluetoothManager.swift */; };
 		45DE89C11CF2D7BE001C821B /* UIAlertController+Counted.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DE89C01CF2D7BE001C821B /* UIAlertController+Counted.swift */; };
-		F34953ABFF807FFCC3E18B2C /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AF033B5700BAE1BEDE4AA3B /* Pods.framework */; };
+		91022876697C26F175302475 /* Pods_QuickCount.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 451474105A1373C1BCF8E7ED /* Pods_QuickCount.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0AF033B5700BAE1BEDE4AA3B /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		451474105A1373C1BCF8E7ED /* Pods_QuickCount.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuickCount.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4533B4E91CE8D78400E85B65 /* QuickCount.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickCount.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4533B4EC1CE8D78400E85B65 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4533B4EE1CE8D78400E85B65 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -142,8 +143,8 @@
 		45DE89BB1CF2BAE5001C821B /* Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		45DE89BD1CF2C374001C821B /* BluetoothManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetoothManager.swift; sourceTree = "<group>"; };
 		45DE89C01CF2D7BE001C821B /* UIAlertController+Counted.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Counted.swift"; sourceTree = "<group>"; };
-		51DF94699FFC5FD375DCFD08 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		94957CB57FEC6F8E4FC8DCD7 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		467054EFF16163F30B28703F /* Pods-QuickCount.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickCount.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuickCount/Pods-QuickCount.debug.xcconfig"; sourceTree = "<group>"; };
+		5973CEB047AF4C485B8CD539 /* Pods-QuickCount.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickCount.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuickCount/Pods-QuickCount.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,7 +152,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F34953ABFF807FFCC3E18B2C /* Pods.framework in Frameworks */,
+				91022876697C26F175302475 /* Pods_QuickCount.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,8 +164,8 @@
 			children = (
 				4533B4EB1CE8D78400E85B65 /* QuickCount */,
 				4533B4EA1CE8D78400E85B65 /* Products */,
-				BF011F9F050D816B6AF5414C /* Pods */,
 				752A017CA74026B5DA49AFB3 /* Frameworks */,
+				AD35AAC81C0C9752592F02A8 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -389,15 +390,16 @@
 			isa = PBXGroup;
 			children = (
 				0AF033B5700BAE1BEDE4AA3B /* Pods.framework */,
+				451474105A1373C1BCF8E7ED /* Pods_QuickCount.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		BF011F9F050D816B6AF5414C /* Pods */ = {
+		AD35AAC81C0C9752592F02A8 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				94957CB57FEC6F8E4FC8DCD7 /* Pods.debug.xcconfig */,
-				51DF94699FFC5FD375DCFD08 /* Pods.release.xcconfig */,
+				467054EFF16163F30B28703F /* Pods-QuickCount.debug.xcconfig */,
+				5973CEB047AF4C485B8CD539 /* Pods-QuickCount.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -409,12 +411,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4533B4FB1CE8D78400E85B65 /* Build configuration list for PBXNativeTarget "QuickCount" */;
 			buildPhases = (
-				FC3B1042C4868ED56B6C2945 /* Check Pods Manifest.lock */,
+				C7C3770274D31B09D5F39F64 /* [CP] Check Pods Manifest.lock */,
 				4533B4E51CE8D78400E85B65 /* Sources */,
 				4533B4E61CE8D78400E85B65 /* Frameworks */,
 				4533B4E71CE8D78400E85B65 /* Resources */,
-				DCF8C25ED5B10B0EAA49A497 /* Embed Pods Frameworks */,
-				C7B21EDCE31FEC58B442573B /* Copy Pods Resources */,
+				A1AED724CFAFABCA6BA45B46 /* [CP] Embed Pods Frameworks */,
+				0B1B3D28E00779FD82219626 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -497,44 +499,44 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		C7B21EDCE31FEC58B442573B /* Copy Pods Resources */ = {
+		0B1B3D28E00779FD82219626 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuickCount/Pods-QuickCount-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		DCF8C25ED5B10B0EAA49A497 /* Embed Pods Frameworks */ = {
+		A1AED724CFAFABCA6BA45B46 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuickCount/Pods-QuickCount-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FC3B1042C4868ED56B6C2945 /* Check Pods Manifest.lock */ = {
+		C7C3770274D31B09D5F39F64 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -689,7 +691,7 @@
 		};
 		4533B4FC1CE8D78400E85B65 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 94957CB57FEC6F8E4FC8DCD7 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = 467054EFF16163F30B28703F /* Pods-QuickCount.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -698,12 +700,13 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.quickcount.QuickCount;
 				PRODUCT_NAME = QuickCount;
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
 		4533B4FD1CE8D78400E85B65 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 51DF94699FFC5FD375DCFD08 /* Pods.release.xcconfig */;
+			baseConfigurationReference = 5973CEB047AF4C485B8CD539 /* Pods-QuickCount.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -712,6 +715,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.quickcount.QuickCount;
 				PRODUCT_NAME = QuickCount;
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};

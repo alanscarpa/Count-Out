@@ -18,7 +18,7 @@ extension UIColor {
     }
     
     class func qcBlackTransparent() -> UIColor {
-        return UIColor(red: 28.0/255.0, green: 28.0/255.0, blue: 28.0/255.0, alpha: 1)
+        return UIColor(red: 28.0/255.0, green: 28.0/255.0, blue: 28.0/255.0, alpha: 0.6)
     }
     
     class func qcGreen() -> UIColor {
